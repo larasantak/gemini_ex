@@ -8,6 +8,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      API_KEY_1: ${{ secrets.API_KEY_1 }}
+      API_KEY_2: ${{ secrets.API_KEY_2 }}
+      API_KEY_3: ${{ secrets.API_KEY_3 }}
+      API_KEY_4: ${{ secrets.API_KEY_4 }}
 
     steps:
     - uses: actions/checkout@v3
