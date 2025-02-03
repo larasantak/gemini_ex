@@ -1,0 +1,36 @@
+Lies den unteren Text und analysiere folgende Aspekte: 1. **Gerichtstyp**:
+Unterscheide, ob es sich um einen Entscheid eines Oberlandesgerichts (OLG) oder
+eines Landgerichts (LG) handelt. Dies sollte im Text bei der Urteilsangabe erwähnt
+sein (z. B. OLG, LG). Hier sollen nur die Begriffe OLG und LG extrahiert werden, der
+Name der Stadt wird nicht benötigt. 2. **Geldbetrag oder Abweisung**: Überprüfe im Text, ob im Abschnitt Tenor ein Geldbetrag genannt wird, den der Kläger
+als Schadensersatz erhält, oder ob die Klage abgewiesen wurde. Dies steht zu
+Beginn des Abschnitts Tenor und wird vor dem Abschnitt Gründe festgelegt. Der
+Betrag wird in der Regel in Euro ohne Zinsen angegeben (z. B. 25.900 EUR) und
+steht zu Beginn des Abschnitts Tenor. Gebe mir nur den Betrag in Euro aus (z.B.
+23542,23 EUR). Falls kein Betrag vorhanden ist und die Klage abgewiesen wurde
+(hierbei wird im Text vermittelt, dass die Klage des 'Klägers/-in' oder der 'Klagepartei'
+abgelehnt wurde. Auch kann im Text stehen, dass die Berufung der Klagepartei
+abgewiesen oder zurückgewiesen wurde.), soll dies als Klage abgewiesen angezeigt
+werden. Achte darauf, dass der Streitwert nicht extrahiert wird.
+Sollte jedoch in dem Abschnitt Tenor nichts zu die Klage des Klägers bzw. der
+Klägerin wird abgewiesen oder der Kläger bzw. die Klägerin erhält Anspruch auf
+Schadensersatz stehen, sondern es wird ein anderes Verfahren betrachtet bzw. ein
+Ablehnungsgesuch der oder des Beklagten wird verworfen, es wird eine
+Streitwertfestsetzung betrachtet, es wird eine Gerichtsstandbestimmung erwähnt
+oder abgelehnt oder eine Entscheidung des Senats thematisiert, dann gebe dies als
+Sonstige aus. Achte dabei vor allem darauf, ob im Text Streitwertfestsetzung
+(einschließlich dessen Ablehnung), Ablehnungsgesuch oder Entscheid des Senats
+thematisiert und ausgeführt wird. Dies sind Indizien für die Kategorie 'Sonstige'.
+Handelt es sich um die Kategorie 'Sonstige', dann gib mit an, woran du dies
+festgemacht hast.
+Könntest du mir die Ergebnisse in einer JSON-Datei zurückgeben. Diese
+soll folgende Struktur haben:'[{'Gerichtstyp':'Bestimmung des Gerichtstyps';
+'Urteil':'Ergebnis der Bestimmung des Urteils'}]'. Es soll immer nur der Gerichtstyp
+und das Ergebnis des Urteils ausgegeben werden. (z.B. Gerichtstyp: OLG, Urteil:
+23.522,43 EUR). Und die Tabelle soll nur einen Eintrag haben.
+
+
+
+Text:
+ *** OLG Schleswig, Beschluss vom 19.10.2021 - 11 U 98/21 *** Fundstelle
+openJur 2022, 2239 Rechtskraft: Optionen Zitierung Versionen Dem Käufer eines mit einer unzulässigen Abschalteinrichtung ausgestatteten Pkw steht kein unionsrechtlicher Schadenersatzanspruch und auch kein Amtshaftungsanspruch aus § 839 BGB i.V.m. Art. 34 GG gegenüber der Bundesrepublik zu. *** Tenor *** 1. Die Berufung des Klägers gegen das Urteil des Einzelrichters der 7. Zivilkammer des Landgerichts Flensburg vom 25.06.2021 wird zurückgewiesen.2. Der Kläger hat die Kosten des Berufungsverfahrens zu tragen.3. Das angefochtene Urteil ist ohne Sicherheitsleistung vorläufig vollstreckbar.Der Kläger darf die Vollstreckung aus dem angefochtenen Urteil und aus diesem Beschluss durch Sicherheitsleistung in Höhe von 110 % des aufgrund des Urteils und des Beschlusses gegen ihn zu vollstreckenden Betrages abwenden, wenn nicht die Beklagte vor der Vollstreckung Sicherheit in Höhe von 110 % des jeweiligen Vollstreckungsbetrages leistet.4. Der Streitwert für das Berufungsverfahren wird auf 19.000,00 € festgesetzt. *** Gründe *** Die Berufung des Klägers ist gemäß § 522 Abs. 2 ZPO zurückzuweisen, weil nach einstimmiger Auffassung des Senats das Rechtsmittel offensichtlich keine Aussicht auf Erfolg hat, der Rechtssache auch keine grundsätzliche Bedeutung zukommt, weder die Fortbildung des Rechts noch die Sicherung einer einheitlichen Rechtsprechung eine Entscheidung des Berufungsgerichts erfordert und die Durchführung einer mündlichen Verhandlung über die Berufung nicht geboten ist.Zur Begründung wird auf den vorausgegangenen Hinweis des Senats Bezug genommen. Auch die Ausführungen in der Gegenerklärung des Klägers geben zu einer Änderung keinen Anlass. Der Senat bleibt aus den in seinem Hinweisbeschluss unter Nr. 3 genannten Gründen dabei, dass keine grundsätzliche Bedeutung der Rechtssache vorliegt und auch die Notwendigkeit der Einheitlichkeit oder Fortbildung des Rechts keine mündliche Verhandlung gebietet. Über die angesprochenen Rechtsfragen herrscht in der obergerichtlichen Rechtsprechung Einigkeit (vgl. zuletzt OLG Zweibrücken, 6 U 68/20; OLG Dresden 1 U 2429/20; OLG Saarbrücken, 4 U 102/20).Die Kostenentscheidung beruht auf § 97 Abs. 1 ZPO, die Entscheidung zur vorläufigen Vollstreckbarkeit des angefochtenen Urteils auf § 708 Nr. 10 ZPO, die Entscheidung zur Abwendungsbefugnis auf § 711 ZPO.Der Streitwert für das Berufungsverfahren wurde in Anwendung der §§ 47, 48 GKG bestimmt. Der Senat hat dabei die mit der beantragten Zug-um-Zug Verurteilung berücksichtigte Vorteilsausgleichung nicht angerechnet. Entscheidend ist der Wert der prozessual geltend gemachten Forderung unabhängig von Gegenleistungen (vgl. OLG Stuttgart, Beschluss vom 27.06.2013, 7 W 34/13; Zöller/Herget, ZPO, 33. Auflage, § 3 ZPO, Rn. 16.78). Permalink: https://openjur.de/u/2385129.html (https://oj.is/2385129)

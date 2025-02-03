@@ -1,0 +1,36 @@
+Lies den unteren Text und analysiere folgende Aspekte: 1. **Gerichtstyp**:
+Unterscheide, ob es sich um einen Entscheid eines Oberlandesgerichts (OLG) oder
+eines Landgerichts (LG) handelt. Dies sollte im Text bei der Urteilsangabe erwähnt
+sein (z. B. OLG, LG). Hier sollen nur die Begriffe OLG und LG extrahiert werden, der
+Name der Stadt wird nicht benötigt. 2. **Geldbetrag oder Abweisung**: Überprüfe im Text, ob im Abschnitt Tenor ein Geldbetrag genannt wird, den der Kläger
+als Schadensersatz erhält, oder ob die Klage abgewiesen wurde. Dies steht zu
+Beginn des Abschnitts Tenor und wird vor dem Abschnitt Gründe festgelegt. Der
+Betrag wird in der Regel in Euro ohne Zinsen angegeben (z. B. 25.900 EUR) und
+steht zu Beginn des Abschnitts Tenor. Gebe mir nur den Betrag in Euro aus (z.B.
+23542,23 EUR). Falls kein Betrag vorhanden ist und die Klage abgewiesen wurde
+(hierbei wird im Text vermittelt, dass die Klage des 'Klägers/-in' oder der 'Klagepartei'
+abgelehnt wurde. Auch kann im Text stehen, dass die Berufung der Klagepartei
+abgewiesen oder zurückgewiesen wurde.), soll dies als Klage abgewiesen angezeigt
+werden. Achte darauf, dass der Streitwert nicht extrahiert wird.
+Sollte jedoch in dem Abschnitt Tenor nichts zu die Klage des Klägers bzw. der
+Klägerin wird abgewiesen oder der Kläger bzw. die Klägerin erhält Anspruch auf
+Schadensersatz stehen, sondern es wird ein anderes Verfahren betrachtet bzw. ein
+Ablehnungsgesuch der oder des Beklagten wird verworfen, es wird eine
+Streitwertfestsetzung betrachtet, es wird eine Gerichtsstandbestimmung erwähnt
+oder abgelehnt oder eine Entscheidung des Senats thematisiert, dann gebe dies als
+Sonstige aus. Achte dabei vor allem darauf, ob im Text Streitwertfestsetzung
+(einschließlich dessen Ablehnung), Ablehnungsgesuch oder Entscheid des Senats
+thematisiert und ausgeführt wird. Dies sind Indizien für die Kategorie 'Sonstige'.
+Handelt es sich um die Kategorie 'Sonstige', dann gib mit an, woran du dies
+festgemacht hast.
+Könntest du mir die Ergebnisse in einer JSON-Datei zurückgeben. Diese
+soll folgende Struktur haben:'[{'Gerichtstyp':'Bestimmung des Gerichtstyps';
+'Urteil':'Ergebnis der Bestimmung des Urteils'}]'. Es soll immer nur der Gerichtstyp
+und das Ergebnis des Urteils ausgegeben werden. (z.B. Gerichtstyp: OLG, Urteil:
+23.522,43 EUR). Und die Tabelle soll nur einen Eintrag haben.
+
+
+
+Text:
+ *** LG Bochum, Urteil vom 17.10.2018 - I-2 O 55/18 *** Fundstelle
+openJur 2019, 22846 Rechtskraft: Optionen Zitierung Versionen *** Tenor *** Die Klage wird abgewiesen.Die Kosten des Rechtsstreits werden der Klägerin auferlegt.Das Urteil ist gegen Sicherheitsleistung i. H.v. 115 % des jeweils zu vollstreckenden Betrages vorläufig vollstreckbar. *** Tatbestand *** Die Klägerin macht Ansprüche in Zusammenhang mit dem W-Abgasskandal geltend.Am 15.05.2015 erwarb die Klägerin bei der Autohaus X GmbH in C das im Antrag näher bezeichnete gebrauchte, von der Beklagten hergestellte Fahrzeug zu einem Kaufpreis i.H.v. 21.500 €.Die Klägerin beantragt,die Beklagte zu verurteilen, an sie 21.500 € nebst Zinsen hieraus i.H.v. 4 % seit dem 15.05.2015 bis zum 25.09.2017 sowie i.H.v. 5 Prozentpunkten über dem Basiszinssatz seit dem 26.09.2017 zu zahlen, Zug um Zug gegen Übereignung und Herausgabe des Fahrzeugs der Marke W vom Typ U mit der Fahrzeugidentifikationsnummer (FIN) ...# nebst zwei Fahrzeugschlüsseln, Kfz-Schein, Kfz-Brief und Serviceheft sowie Zahlung eines von der Beklagten noch darzulegenden Nutzungsersatzes für die Nutzung vorgenannten Pkw, dessen Höhe gemäß § 287 ZPO in das Ermessen des Gerichts gestellt wird;hilfsweise festzustellen, dass die Beklagte verpflichtet ist, ihr Schadensersatz zu bezahlen für Schäden, die aus der Manipulation des Fahrzeugs W vom Typ U mit der Fahrzeugidentifikationsnummer (FIN) ...# durch die Beklagte resultieren;festzustellen, dass sich die Beklagte mit der Annahme der in vorgenannten Klageanträgen genannten Zugum-Zugleistung in Annahmeverzug befindet;die Beklagte zu verurteilen, ihr die durch die Beauftragung ihrer Prozessbevollmächtigten entstandenen Kosten der außergerichtlichen Rechtsverfolgung i.H.v. 1.021,67 € nebst Zinsen i.H.v. 5 Prozentpunkten über dem Basiszinssatz seit Rechtshängigkeit zu zahlen sowie in Höhe von weiteren 176,60 € freizustellen.Die Beklagte beantragt,die Klage abzuweisen.Zur Ergänzung des Sach- und Streitstandes wird auf die hinlänglich bekannten, von den Parteien ausgetauschten Textbausteine Bezug genommen. *** Gründe *** Die Klage ist nicht begründet. Der Klägerin stehen keine Ansprüche gegen die Beklagte zu.Mangels vertraglicher Beziehungen der Parteien kommen für die Klägerin lediglich gesetzliche Ansprüche, vorliegend namentlich aus §§ 823, 826 BGB, in Betracht.Ein Anspruch aus § 823 BGB ist nicht gegeben. Die Beklagte hat die Klägerin nicht getäuscht, da sie in Bezug auf diesen Gebrauchtwagenkauf keinerlei Kontakt hatten.Auch ein Anspruch aus § 826 BGB kommt zu Gunsten der Klägerin nicht in Betracht. Die Beklagte hat der Klägerin nicht in einer gegen die guten Sitten verstoßenden Weise vorsätzlich einen Schaden zugefügt. Zwar erfüllt grundsätzlich das Vorgehen der Beklagten im Zusammenhang dieser Affäre die Voraussetzungen dieser Vorschrift, nicht jedoch gegenüber der Klägerin, da diese einen gebrauchten Pkw erwarb. Die Beklagte hat jedoch an dem Umsatz und Handel mit gebrauchten Fahrzeugen keinerlei Interesse, so dass sie mit Bezug auf die Klägerin nicht vorsätzlich gehandelt hat.Die prozessualen Nebenentscheidungen folgen aus §§ 91, 709 ZPO. Permalink: https://openjur.de/u/2157967.html (https://oj.is/2157967)
