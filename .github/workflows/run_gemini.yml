@@ -19,7 +19,17 @@ jobs:
     - name: Build the Docker image
       run: docker build  -t gemini_ex/gha_gemi .
     - name: Docker Run Action
-      run: docker run --rm --name gha_gemi --env API_KEY="${{ secrets.API_KEY }}" -v $GITHUB_WORKSPACE/scripts/:/root/scripts/:rw -v $GITHUB_WORKSPACE/prompts/:/root/prompts/:rw -v $GITHUB_WORKSPACE/config/:/root/config/:rw  -v $GITHUB_WORKSPACE/output:/root/output:rw gemini_ex/gha_gemi R -e 'Sys.setenv("PATH" = paste(Sys.getenv("PATH"),"/usr/local/stata/",sep=":")); source("~/scripts/run.R")'
+      run: docker run --rm --name gha_gemi \
+        --env API_KEY_1="${{ secrets.API_KEY_1 }}" \
+        --env API_KEY_2="${{ secrets.API_KEY_2 }}" \
+        --env API_KEY_3="${{ secrets.API_KEY_3 }}" \
+        --env API_KEY_4="${{ secrets.API_KEY_4 }}" \
+        -v $GITHUB_WORKSPACE/scripts/:/root/scripts/:rw \
+        -v $GITHUB_WORKSPACE/prompts/:/root/prompts/:rw \
+        -v $GITHUB_WORKSPACE/config/:/root/config/:rw \
+        -v $GITHUB_WORKSPACE/output:/root/output:rw \
+        gemini_ex/gha_gemi R -e 'Sys.setenv("PATH" = paste(Sys.getenv("PATH"),"/usr/local/stata/",sep=":")); source("~/scripts/run.R")'
+
     - uses: actions/upload-artifact@v4
       with:
         name: gemini_results
