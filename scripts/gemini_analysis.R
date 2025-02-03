@@ -2,12 +2,32 @@ MAX_RUNTIME_SEC = 5*60*60 # Max runtime on Github
 MIN_SEC_PER_PROMPT = 5 # Minimum number of seconds between prompts
 
 
+# Diese Funktion lädt die API-Schlüssel aus den Umgebungsvariablen
+get_api_key <- function() {
+  keys <- c(
+    Sys.getenv("API_KEY_1"),
+    Sys.getenv("API_KEY_2"),
+    Sys.getenv("API_KEY_3"),
+    Sys.getenv("API_KEY_4")
+  )
+  # Entferne leere Zeichenketten (falls ein Schlüssel nicht gesetzt ist)
+  keys <- keys[keys != ""]
+  
+  if(length(keys) == 0) {
+    stop("Keine API-Schlüssel gefunden! Bitte setze API_KEY_1, API_KEY_2, API_KEY_3 und API_KEY_4 als Umgebungsvariablen.")
+  }
+  
+  # Wähle einen zufällig aus
+  sample(keys, 1)
+}
+
+
 perform_analysis = function() {
   library(dplyr)
 
   start_time = as.numeric(Sys.time())
 
-  API_KEY = Sys.getenv("API_KEY")
+  API_KEY = get_api_key()
   setwd("~")
   outdir = "/root/output"
   if (.Platform$OS.type == "windows") {
