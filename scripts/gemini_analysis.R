@@ -6,7 +6,7 @@ MIN_SEC_PER_PROMPT = 5 # Minimum number of seconds between prompts
 get_api_key <- function() {
   keys <- c(
     Sys.getenv("API_KEY_1"),
-    Sys.getenv("API_KEY_2"),
+    #Sys.getenv("API_KEY_2"),
     Sys.getenv("API_KEY_3"),
     Sys.getenv("API_KEY_4")
   )
@@ -46,6 +46,9 @@ perform_analysis = function() {
 
   for (file in prompt_files) {
     prompt_start_time = as.numeric(Sys.time())
+    
+    # Für jeden Prompt einen neuen API-Schlüssel auswählen:
+    API_KEY = get_api_key()
 
     prompt_name = tools::file_path_sans_ext(basename(file))
     cat("\n\n****", prompt_name, "***\n")
