@@ -2,9 +2,9 @@
 # unless explicitly overwritten by prompt specific
 # settings
 
-model: gemini-1.5-flash
+model: gemini-2.0-flash
 
-json_mode: FALSE
+json_mode: TRUE
 
 temperature: 0.0
 

@@ -1,0 +1,1129 @@
+Below is an English 10-K filing document. Your task is twofold:
+
+1. Sentiment Classification:
+   - Analyze the entire document equally from an investor’s perspective.
+   - Decide whether, based solely on the provided text, an investor would likely increase their investment ("positive"), decrease their investment ("negative"), or maintain their current position ("neutral").
+
+2. Summary Generation:
+   - Generate a concise summary that reflects the overall sentiment, emphasizing both positive and negative events relevant to an investment decision.
+   - Ensure the summary does not exceed 512 tokens.
+   - Note: The summary must be tokenized according to FinBERT's tokenizer, ensuring it does not exceed 512 tokens. If necessary, condense the content to fit within this limit.
+
+Important: Rely solely on the text provided below and do not incorporate any external or background information.
+
+Output your result as a JSON object with exactly two keys:
+{
+  "Sentiment": "<positive|negative|neutral>",
+  "Summary512": "<your summary here>"
+}
+
+Do not include any additional explanations or text. The full 10-K document is appended below this prompt.
+
+
+10-K
+1
+aivn10-k.htm
+AIVN10-K
+
+
+
+
+
+UNITED STATES 
+SECURITIES AND EXCHANGE COMMISSION 
+Washington, D.C. 20549 
+ 
+FORM 10-K
+ 
+
+ 
+Commission File Number 000-30368 
+ 
+AMERICAN INTERNATIONAL VENTURES, INC.
+(Exact Name of Registrant as Specified in its Charter)
+ 
+
+ 
+15105 Kestrelglen Way, Lithia, Florida 33547
+(Address of Principal Executive Offices) (Zip Code)
+ 
+813-260-2866 
+(Registrant's telephone number, including area code) 
+ 
+Securities registered pursuant to Section 12(b) of the Act: NONE 
+Securities registered pursuant to Section 12(g) of the Act: Common Stock $.00001 par value 
+ 
+Indicate by check mark if the registrant is a well-known seasoned issuer. ¨ Yes   x   No 
+ 
+Indicate by checkmark if the registrant is not required to file reports pursuant to Section 13 or 15(d) of the Exchange Act: ¨ 
+ 
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15 (d) of the Securities Exchange Act of 1934 during the proceeding 12 months and (2) has been subject to such filing requirements for the past 90 days. 
+(1)  x Yes   ¨ No   (2) x Yes   ¨ No 
+ 
+Indicate by check mark if disclosure of delinquent filers pursuant to Item 405 of Regulation S-K (§ 229.405 of this chapter) is not contained herein, and will not be contained, to the best of registrant’s knowledge, in definitive proxy or information statements incorporated by reference in Part III of this Form 10-K or any amendment to this Form 10-K.. x 
+ 
+Indicate by check mark whether the registrant has submitted electronically and posted on its corporate Web site, if any, every Interactive Data File required to be submitted and posted pursuant to Rule 405 of Regulation S-T (§ 232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit and post such files).   ¨ Yes x No 
+ 
+Indicate by check mark if disclosure of delinquent filers pursuant to Item 405 of Regulation S-K (§ 229.405 of this chapter) is not contained herein, and will not be contained, to the best of registrant’s knowledge, in definitive proxy or information statements incorporated by reference in Part III of this Form 10-K or any amendment to this Form 10-K. x 
+ 
+Indicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer or a smaller reporting company filer.  See definition of “accelerated filer” and “large accelerated filer” in Rule 12b-2 of the Exchange Act (Check one): 
+ 
+
+ 
+Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).  ¨ Yes   x   No
+ 
+As of August 7, 2018, the aggregate market value of the voting and non-voting common equity held by non-affiliates is approximately $2,497,550. This calculation is based upon the last trade of $0.011 of the common stock on August 7, 2018. The number of shares outstanding of the registrant's class of common stock on August 7, 2018 was 360,399,945 shares.
+1
+
+EXPLANATORY NOTE
+ 
+American International Ventures Inc. (“AIVN”) previously filed audited quarterly and annual reports up to and including the quarterly period ended February 28, 2017.
+ 
+Commencing with Form 10-K for annual period ended May 31, 2017, AIVN has filed unaudited voluntary filings of quarterly and annual reports.
+2
+AMERICAN INTERNATIONAL VENTURES, INC. 
+FORM 10-K  
+For the Fiscal Year Ended May 31, 2018 
+ 
+Table of Contents 
+ 
+PART I4 
+Item 1. Business4 
+Item 1A. Risk Factors.13 
+Item 1B.  Unresolved Staff Comments25 
+Item 2.  Properties.26 
+Item 3.  Legal Proceedings.26 
+Item 4.  Mine Safety Disclosures.26 
+PART II27 
+Item 5.  Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.27 
+Item 6. Selected Financial Data.28 
+Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations.28 
+Item 7A. Quantitative and Qualitative Disclosures About Market Risk.31 
+Item 8. Financial Statements32 
+Item 9A. Controls and Procedures48 
+Item 9B. Other Information.48 
+PART III49 
+Item 10.  Directors. Executive Officers. Promoters and Control Persons.49 
+Item 11.  Executive Compensation.51 
+Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters.51 
+Item 13. Certain Relationships and Related Party Transactions.53 
+Item 14.  Principal Accounting Fees and Services.53 
+3
+
+PART I
+Item 1. Business
+ 
+Except as otherwise indicated by the context, references in this Annual Report on Form 10-K to “we,” “us” and “our” are to the consolidated business of the Registrant and PGPI.
+ 
+We conduct our operations in Lithia, Florida, from an office in the home of our chief executive officer and we intend to open an office in Ensenada, Mexico.  The present office is occupied at no charge to us. There is no rental agreement for the use of this office. If rent were charged for this space, the amount would be insignificant.
+ 
+Background.
+ 
+Originally, on July 16, 1984, we were organized as Lucky Seven Gas and Minerals, Inc., under the laws of the State of Pennsylvania.  On June 24, 1996, our name was changed to Lucky Seven Gold Mines, Inc.  On January 13, 1998, American Precious Metals, Inc. was formed, under the laws of the State of Delaware.  On March 16, 1998, we merged into American Precious Metals, Inc., the surviving corporation.  On November 13, 2000, our name was changed to American Global Enterprises, Inc. and on December 21, 2000, our name was changed again to American International Ventures, Inc.
+ 
+Prior Business Activities.
+ 
+During 2002, we developed a plan of operations to seek, identify and, if successful, acquire a portfolio of undervalued or sub-economic but prospective mineral properties in the United States, principally gold properties that could be enhanced by performing limited exploratory work on the property. We would then attempt to identify a joint venture partner to further develop the property or otherwise sell the property to an industry participant.
+ 
+Pursuant to our then business plan, we acquired twenty-eight (28) patented mining claims on the Bruner property located in Nye County, Nevada.
+ 
+In September 2005, we completed an Exploration and Option to Enter Joint Venture Agreement with Electrum Resources LLC relating to the Bruner property, which agreement was terminated in January 2007. In April 2009, we completed a Property Option Agreement with Patriot Gold Corp., an unaffiliated third party, in which we granted an exclusive option to the Bruner Property (the “Bruner Option”), for eight annual payments totaling $315,000.00 and a balloon payment due to us in April 2016, in the amount of $1,185,000.  In addition, we retained a 1.5% net smelter reserve (“NSR”) wherein Patriot Gold has the option to purchase 1% of the NSR for an additional $500,000. On October 23, 2015 we completed sale agreement and option agreement with Canamex Gold a Nevada Corporation for $750,000. 
+ 
+Then, we determined to expand our business purpose to seek other business opportunities to review and analyze for purposes of effecting a merger, acquisition or other business combination with an operating company business.
+ 
+In April 2018, we amended our Certificate of Incorporation to increase our authorized shares of common stock from 400,000,000 shares to 800,000,000 shares.
+4
+Share Exchange with Placer Gold Prospecting, Inc.
+ 
+On March 23, 2012, we closed on the Share Exchange Agreement with the shareholders of Placer Gold Prospecting, Inc. (PGPI) pursuant to which we acquired all of the issued and outstanding capital stock of PGPI. The transaction was treated as a reverse merger for accounting purposes.  See our Form 8-K/A filed on July 9, 2013 for a more detailed discussion of the Share Exchange Agreement.
+ 
+Other Business Activity.
+ 
+As reported in our Form 8-K filed February 8, 2013, effective January 23, 2013, the Company executed a lease agreement to conduct mining operations and other related activities at Section 20-00-00.00 Plot Number 29Z-0-P-1 at Ejido 18 de Marzo, in the City of Ensenada, Baja California, Mexico. 
+ 
+As reported in our Form 8-K filed March 15, 2013, effective March 13, 2013, AIVN executed a lease agreement to conduct mining operations and other related activities on approximately 24 hectors, at the plot number 28 Northwest of Ejido 18 de Marzo, in the city of Ensenada, Baja California, Mexico. Effective March 7, 2013, AIVN incorporated a variable capital corporation in the city of Tijuana, Baja California, Mexico, by the name of AIVN de Mexico the registrant’s treating said incorporation of AIVN de Mexico as a subsidiary. The primary purpose of said creation of AIVN de Mexico shall be to conduct mining operations and other related activities. We began searching for drilling operations with our pilot plant in May 2013. 
+ 
+As reported on our Form 8-K filed on April 24, 2013, effective March 23, 2012, our Board of Directors approved and recommended that the company’s 2012 Stock Option Plan and the proposed action be submitted to a vote of its shareholders. The record date established by the Board of Directors was October 22, 2012. A majority of stockholders approved the 2012 Stock Option Plan on November 9, 2012.
+ 
+Description of Placer Gold Prospecting, Inc.’s Business
+ 
+For purposes of this section entitled “Description of Placer Gold Prospecting, Inc.’s Business” only, all references to “we,” “us,” or “our” or “PGPI” refers to PGPI prior to the effectiveness of the Share Exchange.
+ 
+On January 25, 2012, PGPI was incorporated in the State of Florida, for mining exploration.  It has acquired mining claims for approximately 4,050 acres of land, primarily in Nevada, with the intent of reactivating the historical mines that produced gold and silver until shut down in 1942 because of World War II. There is no guarantee that such properties will produce gold or silver in the future or that these properties may have already been depleted, as they were previously mined.
+ 
+At this time, our primary focus is on gold and silver properties. Gold and silver properties are wasting assets. They eventually become depleted or uneconomical to continue mining. Currently, we have not produced any gold or silver from our properties. We are in the exploration stage and potential investors should be aware of the difficulties normally encountered by enterprises in the exploration stage. Our ability to become and remain profitable over the long term depends on our ability to finalize the design, permit, development and profitable extraction and recovery of mineral resources beyond our current planned mine life. If our ability to expand the operations beyond their current planned mined lives doesn’t occur we may seek to acquire other precious and base metals properties beyond our current properties. The acquisition of precious and base metals properties and their exploration and development are subject to intense competition. Companies with greater financial resources, larger staff, more experience and more equipment for exploration and development may be in a better position than us to compete for such mineral properties.
+5
+Below is a list of the claims which PGPI acquired prior to March 23, 2012, the date of reverse acquisition.
+ 
+
+ 
+The following is a list of claims acquired after March 23, 2012:
+ 
+
+ 
+Sale of Mining Claims during Fiscal 2014.
+During fiscal year to 2014, we sold certain mining claims to Gold Mining USA, Inc. (OTC -PINK: GMUI)   (“GMU”). On February 4, 2014, the Company completed the sale of certain mining claims to GMU in exchange for 5 million shares of common stock of GMU. The Company reserved a 3% net smelter return on the claims. The claims consist of four unpatented claims and are part of eight claims held by the Company known as the “Gypsy Gold Mine.” In addition, on June 16, 2014, the Company completed the sale of additional unpatented mining claims to GMU in exchange for 1.5 million shares of common stock of GMU and the Company also reserved a 3% net smelter return. The mining claims consist of twenty two unpatented claims known as “El Tule/Rich Gulch” and remaining four unpatented claims which are part of the “Gypsy Gold Mine” claims. All of the claims are located in Douglas County, Nevada
+ 
+Under the February 2014 agreement, the parties further agreed that GMU has the option to purchase the remaining four unpatented claims (part of the Gypsy Gold Mine) in exchange for GMU purchasing a convertible debenture in the amount of $1,000,000 from the Company within six months from the closing of the original transaction (“Debenture”).  Under the current June agreement, the Company included these four unpatented mining claims as part of the above described transaction, and the parties agreed that the stock consideration (1.5 million shares of common stock of GMU) satisfied the obligation to purchase the Debenture as required under the January 2014 agreement.
+ 
+15 miles from the town of Tularosa New Mexico, and is accessible through 
+6
+Sale of Bruner Mine.  (1)  Location: The Bruner mine is located in township 14 north, range 37 east, and encompasses the SE1/4 of section 14, section 23 NE1/4, section 13 SW1/4, and section 24 NE1/4. The Bruner mine is located 76 miles from the town of Fallon Nevada of HWY 361. The Bruner property consists of 28 patented mining claims. 
+(2) The Bruner was optioned in 2008 to Patriot Gold in Las Vegas which made annual payments to the Company under the Option Agreement. The Bruner Property was sold to Canamex resources U.S., Inc. on October 30, 2015 for $750,000 cash.  Canamex also assumed the obligations of the Company to Patriot Gold under the option Agreement.  The sale to Canamex was subject to the Company’s 1.5% net smelter return (NSR) royalty as well as an underlying royalty of 2.0% to the original project vendor.   
+ 
+Golden Eagle Placers Mine
+ 
+(1) Location: The Golden Eagle Placers mine is located in township 35 north, range 34 east, and encompasses the entire section 29. The Golden Eagle mine is located 27.8 miles from the town of Winnemucca, Nevada off HYW 80/Jungo RD.
+(2) Description of claim: The Golden Eagle mine consists of 704 acres of patented (fee simple). The annual tax on this property is $146. The property was purchased by American International Ventures, Inc. subsequent to the reverse acquisition of Placer Gold Prospecting, Inc. for $601,000.00 in cash, note, and Company shares.  The Company used approximately $68,000 of the Bruner sale proceeds to close its acquisition of Golden Eagle.
+(3) History of Previous Operations: The Golden Eagle mine was previously worked back in the 1930's by a large group of miners. The site has an extensive amount of shafts, adits, and tailings that were left by the early group of miners that were in search of gold.   
+(4) (i) The Golden Eagle mine is an open cast surface deposit with additional subsurface workings. Our company retained the services of Aurum Exploration, and AMEC during the acquisition of this property to obtain all necessary permits and conduct geological evaluations. AMEC is currently working on obtaining all permits for mining and roadways with the assistance of Aurum Exploration.  Over $250,000 
+7
+has been spent on the construction of roads leading to the mine, and excavation of two settling ponds. At this time the property is without known reserves and the proposed program is exploratory in nature.
+     (ii) The Golden Eagle mine has a 2 bedroom house and office, well, gates, and water truck at the site. 
+5)  Gold mineralization is thought to have occurred during periods of fracture and breccia controlled chalcedony sulfide mineralization. Oxidation appears to be related to a deep, wide spread acid leaching event, and by descending supergene fluids along the East Fault. The Vortex Zone, bordering the south end of the Brimstone Zone, is hosted in rocks similar to those at Brimstone, but overprinted with extensive hydrothermal brecciation. Alteration in the Vortex Zone is primarily strong silicification capped with hydrothermal argillic and subordinate acid leach alteration. Mineralization in the Vortex Zone is thought to be related to several pulses of fracturing and hydrothermal brecciation, plus quartz and chalcedonic veining. Vortex is bounded on the east by the East Fault, and is open to the north, west, and south and at depth. Subsequent Acquisition of Claims in Baja California, Mexico.
+ 
+In January 2013, the Company leased certain claims from the mother of the current President of the Company’s Mexican subsidiary which covers 22.5 acres, in Baja California, Mexico for a period of five (5) years. The lease provides a payment of $300 per month. These claims are known as the “Mother Lode” claims. In addition, effective March 13, 2013, the Company executed a lease agreement to conduct mining operations and other related activities on approximately twenty four (24) hectares, at the plot number 28 Northwest of Ejido 18 de Marzo, in the City of Ensenada, Baja California, Mexico (the “Property”).  The owner of the Property is Tito Calas Zarate.
+ 
+The principal provisions of the agreement include:
+ 
+(1) Term - Four (4) Years;
+(2) Rental Payment - $200.00 (US) per month;
+(3) Lease Rights - Assignable by the Company;
+(4) Improvements - Improvements made by the Company are for the benefit of the Owner;
+(5) Maintenance and Repairs - The property must be maintained by the Company to at least its current condition;
+(6) Option to Purchase - During the term, the Company has the first option to negotiate and purchase the property.
+ 
+On December 1, 2015, AIVN de Mexico, S.A. de C.V. (“AIVN Mexico”) purchased ten mining concessions commonly known as “Quesaro” for $50,000 cash.  AIVN Mexico is a wholly owned subsidiary of Mega Mines, Inc., which in turn is a wholly owned subsidiary of the Company.  The concessions are located in Baja, Mexico.  The concessions are as follows:
+ 
+
+ 
+ 
+On December 2, 2016, AIVN purchased Mega Mines LLC forty-five million common shares. 
+8
+The List of gold mining Concessions in the name of Mega Mines LLC located in the State of Michoacán,   
+Mexico:
+ 
+ 
+NameConcession No.     Hectares 
+LA BONDAD054-08849         200 
+EL RINCON 1232351200 
+EL RINCON 2233553275 
+LA HUERTA054-08883510 
+LA CARRETA236305207 
+CTUZ DEL SUR 1223881500 
+LOBOS2229622468 
+LA PERLA243146200 
+ 
+ 
+ 
+Description of our Current Business
+ 
+Since the acquisition of PGPI, our operations have focused on planning, developing and operating past producing precious metal properties and mines. Specifically, we are now a gold and silver exploration and extraction company, operating primarily in the Baja California through our subsidiary AIVN de Mexico. In addition to our mining claims in Nevada, we also lease certain mining claims in the Baja California, Mexico. The main focus of current activity has been on mining claims in Baja California, Mexico. During June 2013, we commenced limited operations on the mining claims known as the Mother Lode which we acquired in early calendar year 2013. These claims have both placer and hard rock geological characteristics, and we began a pilot program to mine the placer portion of the claim in June 2013. A problem with our mining permit caused us to suspend mining in May 2014.  We are addressing this problem and expect to resume mining before the end of our third fiscal quarter 2016. We mine the placer material using heavy equipment and then process the material through a wash mill located on the premises. We purchased a majority of the necessary heavy equipment and mill in 2012. We have not established any proven or probable reserves on this property. On February 20, 2018 the Company acquired as a wholly owned subsidiary GeoEnergy (USA) Inc., GeoAsia Group, GeoFuel (Singapore) PTE LTD, Geo-Qtx Synfuels, Inc International License agreement and Indonesia Joint Venture with PT Bhumi Sriwijaya Perdana Coal for eighty million shares.
+9
+We currently have one full time employee located in Mexico, and five-part time employees in the United States consisting of our Chief Executive Officer, President, Chief Operating Officer, Chief Financial Officer and Chief Technology Officer.
+ 
+Types of Claims
+ 
+*   a patented mining claim is a mineral claim originally staked on land owned by in the United States Government, where all its associated mineral rights have been secured by the claimant from the U.S. Government in compliance with the laws and procedures relating to such claims, and title to the surface of the claim and the minerals beneath the surface have been transferred from the U.S. Government to the claimant. Annual mining claim assessment work is not required, and the claim is taxable real estate.
+ 
+*   an unpatented mining claim is a mineral claim staked on federal, state or, in the case of severed mineral rights, private land to which a deed from the U.S. Government or other mineral title owner has not been received by the claimant. Unpatented claims give the claimant the exclusive right to explore for and to develop the underlying minerals and use the surface for such purpose. However, the claimant does not own title to either the minerals or the surface, and the claim is subject to annual assessment work requirements and the payment of annual rental fees which are established by the governing authority of the land on which the claim is located. The claim may or may not be subject to production royalties payable to that governing authority.
+ 
+Exploration Business and Operations
+The Company doesn’t expect to conduct any mining operations in Nevada during the fiscal year ended May 31, 2018 and there can be no assurance the Company will be able to sell or have the financing to complete the permitting of the Golden Eagle or ever mine in Nevada. 
+We have accumulated substantial losses and our auditor has issued to us a going concern opinion. We expect to continue to incur losses unless and until we generate sufficient revenue from production to fund continuing operations including exploration and development costs. We expect such losses or the monthly burn rate to be in the range of $40,000 to $60,000. There is no assurance we will be profitable for any quarterly or annual period. We anticipate we will need to raise approximately $5,000,000 to $7,000,000 in the next 12 months to fund our planned exploration expenditures, debt service and general working capital requirements. We plan to raise the financing through debt and/or equity placements. Failure to raise needed financing could result in us having to scale back or discontinue exploration activities or some or all of our business operations.
+10
+Our Industry
+ 
+The Gold Market. The market for gold is large, liquid and global. Gold continues to see demand in the jewelry, industrial and health science industries; however, gold’s main demand comes in the form of safe haven investment. From economic, political and social uncertainty to a hedge against inflation, gold is, and has long been, considered by many a commodity of refuge from concerns with fiat currencies and their corresponding economies.
+ 
+The World Gold Council (“WGC”), a leading international gold industry research organization, published on its website that total gold demand for the fourth quarter of 2011 rose 21% to 1,017 metric tonnes (a metric tonne is equal to 2,204.6 pounds) year-on-year. Of this increase, investment demand posted the largest segment increase, more than offsetting the decline in gold jewelry demand.  Due to the volatility of the price of gold, however, there is no guarantee that total gold demand will continue to grow at comparable rates in the future.
+ 
+The Silver Market. Unlike the gold market, demand within the silver market has been predominantly for fabrication – mainly industrial application, photography and jewelry – with investment making up only a small portion of total yearly demand.
+Government and Environmental Regulation
+ 
+Our mining, processing operations and exploration activities are subject to various laws and regulations governing: (i) the protection of the environment, (ii) exploration, (iii) mine safety, development and production, (iv) exports,(v) taxes, (vi) labor standards, (vii) occupational health, (viii) waste disposal, (ix) toxic substances, (x) water rights, (xi) explosives and (xii) other matters. New laws and regulations, amendments to existing laws and regulations or more stringent implementation of existing laws and regulations could have a material adverse impact on us, increase costs, cause a reduction in levels of, or suspension of, production and/or delay or prevent the development of new mining properties.
+ 
+The governmental agencies and regulators tasked with implementing and enforcing the above laws and regulations include the Bureau of Land Management, the Mine Safety and Health Administration, the Department of Natural Resources and Conservation, and the Bureau of Alcohol, Tobacco, Firearms and Explosives.
+ 
+We believe we are currently in compliance in all material respects with all applicable environmental laws and regulations. Such compliance requires significant expenditures and increases mine development and operating costs. Mining is subject to potential risks and liabilities associated with pollution of the environment and the disposal of waste products occurring as a result of mineral exploration and production. Environmental liability may result from mining activities conducted by others prior to our ownership of a property. To the extent we are subject to uninsured environmental liabilities, the payment of such liabilities would reduce our otherwise available earnings and could have a material adverse effect on our business plan.
+ 
+Licenses and Permits
+ 
+Our operations require licenses and permits from various governmental authorities. We believe we hold all material licenses and permits required under applicable laws and regulations and believe we are presently complying in all material respects with the terms of such licenses and permits. However, such licenses and permits are subject to change in various circumstances. There can be no guarantee that we will be able to obtain or maintain all necessary licenses and permits that may be required to explore and develop our properties, commence construction or operation of mining facilities and properties under exploration or development or to maintain continued operations that economically justify the cost.
+11
+Mine Safety and Health Administration Regulations
+ 
+Pursuant to Section 1503(a) of the recently enacted Dodd-Frank Wall Street Reform and Consumer Protection Act, issuers that are operators, or that have a subsidiary that is an operator, of a coal or other mine in the United States are required to disclose in their periodic reports filed with the SEC information regarding specified health and safety violations, orders and citations, related assessments and legal actions, and mining-related fatalities.  At the present time we do not plan any operations in 2018/19 in Nevada.
+ 
+Competition
+ 
+Because the life of a mine is limited by its mineral reserves, we are continually seeking to replace and expand our reserves through the exploration of existing properties as well as through acquisitions of interests in new properties or of interests in companies which own such properties. We encounter competition from other mining companies in connection with the acquisition of properties and with the engaging and maintaining of qualified industry experienced personnel. This competition may increase the cost of acquiring suitable properties and retaining qualified industry experienced personnel.
+ 
+The Share Exchange
+ 
+On March 23, 2012, we (as buyer) entered into, and closed on, a Share Exchange Agreement (the “Exchange Agreement”) with the shareholders of Placer Gold Prospecting, Inc. (“PGPI”), a Florida corporation, pursuant to which we acquired all 162,350,000 outstanding shares of common stock of PGPI in exchange for 162,350,000 shares of our common stock (the “Share Exchange”). Immediately prior to the Exchange Agreement, we had 19,354,044 shares of common stock issued and outstanding.
+The transaction has been accounted for as a reverse recapitalization, a procedure that treats the transaction as though PGPI had acquired AIVN.  Under the accounting for a reverse recapitalization, the assets and liabilities of AIVN were recorded on the books of the continuing company, and the stockholders' equity accounts of AIVN were reorganized to reflect the terms of the Share Exchange.  No goodwill or other intangible asset was recognized.  
+ 
+After closing of the Share Exchange, the former shareholders of PGPI now own approximately 89% of our common stock and we own 100% of PGPI.  PGPI is in the business of mining exploration and acquisition. 
+ 
+Jack Wagenti, our CEO, at that time, executed the Exchange Agreement on our behalf. Mr. Wagenti was a founder, CEO and director of PGPI, and owned 25 million shares of common stock of PGPI (approx. 16%) at the time of the closing of the Share Exchange (the “Closing”).  Frederick Dunne, Jr., one of our directors as of Closing, owned 1,000,000 shares of common stock of PGPI (less than 1%) as of the closing.   Arthur Ackerman, one of our directors as of closing, owned 6,000,000 shares of common stock of PGPI (approximately 3.6%) as of the closing.
+ 
+ After giving effect to the Share Exchange, there were 181,695,044 shares of our common stock outstanding, of which approximately 89% are held by the former shareholders of PGPI. Prior to the Share Exchange, we were a shell company with no business operations.  As a result of the Share Exchange, we are no longer considered a shell company and there was a change in control of the Company.
+ 
+The issuance of the shares of our common stock pursuant to the Share Exchange, was made in reliance upon an exemption from registration under the Securities Act of 1933, as amended (the “Securities Act”), pursuant to Regulation D promulgated thereunder.  As such, the shares of our common stock may not be offered or sold unless they are registered under the Securities Act or an exemption from the registration requirements of the Securities Act is available.
+12
+Item 1A. Risk Factors. 
+ 
+Risk Factors 
+ 
+Disclosure Regarding Cautionary Statements.
+ 
+Forward Looking Statements. Certain of the statements contained in this Annual Report on Form 10-K includes "forward looking statements" within the meaning of Section 21E of the Securities Exchange Act of 1934, as amended ("Exchange Act"). All statements other than statements of historical facts included in this Form 10-K regarding the Company's financial position, business strategy, and plans and objectives of management for future operations and capital expenditures, and other matters, are forward looking statements. These forward-looking statements are based upon management's expectations of future events. Although we believe the expectations reflected in such forward looking statements are reasonable, there can be no assurances that such expectations will prove to be correct. Additional statements concerning important factors that could cause actual results to differ materially from our expectations ("Cautionary Statements") are disclosed below in the Cautionary Statements section and elsewhere in this Form 10-K.  All written and oral forward-looking statements attributable to us or persons acting on our behalf subsequent to the date of this Form 10-K are expressly qualified in their entirety by the Cautionary Statements. 
+ 
+Cautionary Statements. Certain risks and uncertainties are inherent in the Company's business. In addition to other information contained in this Form 10-K, the following Cautionary Statements should be considered when evaluating the forward-looking statements contained in this Form 10-K: 
+ 
+YOU SHOULD CAREFULLY CONSIDER THE FOLLOWING FACTORS, IN ADDITION TO THE OTHER INFORMATION INCLUDED ELSEWHERE IN THIS CURRENT REPORT AND THE DOCUMENTS THAT WE HAVE FILED WITH THE SECURITIES AND EXCHANGE COMMISSION. UNLESS THE CONTEXT REQUIRES OTHERWISE, THE USE OF THE COMPANIES, THE COMBINED COMPANY, “US,” OR “WE” REFERS TO THE COMBINED COMPANY OF PGPI AND US AFTER GIVING EFFECT TO THE SHARE EXCHANGE. WE HAVE DISCUSSED ALL KNOWN MATERIAL RISKS, HOWEVER, ANY RISKS NOT PRESENTLY KNOWN TO US, IF THEY MATERIALIZE, ALSO MAY ADVERSELY AFFECT US AND OUR STOCK PRICE. 
+ 
+Our business is to engage in exploration and production activities in the precious minerals mining industry, which is a highly speculative activity. An investment in our securities involves a high degree of risk. You should not invest in our securities if you cannot afford to lose your entire investment. In deciding whether you should invest in our securities, you should carefully consider the following information together with all of the other information contained in this Current Report. Any of the following risk factors can cause our business, prospects, financial condition or results of operations to suffer and you to lose all or part of your investment.
+ 
+Risks Related to Our Business and Financial Condition
+ 
+Estimates of mineralized material are based on interpretation and assumptions and may yield less mineral production under actual conditions than is currently estimated.
+ 
+There are numerous uncertainties inherent in estimating quantities of mineralized material such as gold and silver, including many factors beyond our control and no assurance can be given that the recovery of mineralized material will be realized. In general, estimates of mineralized material are based upon a number of factors and assumptions made as of the date on which the estimates were determined, including:
+13
+ogeological and engineering estimates that have inherent uncertainties and the assumed effects of regulation by governmental agencies;  
+othe judgment of the engineers preparing the estimates;  
+oestimates of future metals prices and operating costs;  
+othe quality and quantity of available data;  
+othe interpretation of that data; and  
+othe accuracy of various mandated economic assumptions, all of which may vary considerably from actual results.  
+ 
+Until mineralized material is actually mined and processed, it must be considered an estimate only. These estimates are imprecise and depend on geological interpretation and statistical inferences drawn from drilling and sampling analysis, which may prove to be unreliable. We cannot assure you that these mineralized material estimates will be accurate or that this mineralized material can be mined or processed profitably. Any material changes in estimates of mineralized material will affect the economic viability of placing a property into production and such property’s return on capital. There can be no assurance that minerals recovered in small scale metallurgical tests will be recovered at production scale.
+ 
+We may have difficulty meeting our current and future capital requirements.
+ 
+Our management and our board of directors monitor our overall costs and expenses and, if necessary, adjust our programs and planned expenditures in an attempt to ensure we have sufficient operating capital. We continue to evaluate our costs and planned expenditures for our on-going development and care and maintenance efforts at our mineral properties. The continued development and care and maintenance of our mineral properties will require significant amounts of additional capital. As a result, we may need to explore raising additional capital during fiscal 2014 and beyond so that we can continue to fully fund our planned activities. Our ability to obtain this financing will depend upon, among other things, the price of gold and the industry’s perception of its future price. The extraordinary conditions in the global financial and capital markets have currently limited the availability of this funding. Therefore, availability of funding is dependent largely upon factors outside of our control and cannot be accurately predicted. If the disruptions in the global financial and capital markets continue, debt or equity financing may not be available to us on acceptable terms, if at all. If we are unable to fund future operations by way of financing, including public or private offerings of equity or debt securities, our business, financial condition and exploration activities will be adversely impacted.
+ 
+We anticipate that our expected near term and long-term financing requirements to continue our operations and to implement our exploration plans is as follows: five to seven million. At this time, we do not have any arrangements for such financing and there can be no assurance we will acquire such financing. 
+ 
+As an “emerging growth company” under the JOBS Act, we are permitted to rely on exemptions from certain disclosure requirements. 
+ 
+We qualify as an “emerging growth company” under the JOBS Act. As a result, we are permitted to, and intend to, rely on exemptions from certain disclosure requirements. For so long as we are an emerging growth company, we will not be required to: 
+ 
+ohave an auditor report on our internal controls over financial reporting pursuant to Section 404(b) of the Sarbanes-Oxley Act;  
+osubmit certain executive compensation matters to shareholder advisory votes, such as “say-on-pay” and “say-on-frequency;” and  
+odisclose certain executive compensation related items such as the correlation between executive compensation and performance and comparisons of the Chief Executive’s compensation to median employee compensation.  
+14
+In addition, Section 107 of the JOBS Act also provides that an emerging growth company can take advantage of the extended transition period provided in Section 7(a)(2)(B) of the Securities Act for complying with new or revised accounting standards. In other words, an emerging growth company can delay the adoption of certain accounting standards until those standards would otherwise apply to private companies. We have elected to take advantage of the benefits of this extended transition period. Our financial statements may therefore not be comparable to those of companies that comply with such new or revised accounting standards. 
+ 
+We will remain an “emerging growth company” for up to five years, or until the earliest of (i) the last day of the first fiscal year in which our total annual gross revenues exceed $1 billion, (ii) the date that we become a “large accelerated filer” as defined in Rule 12b-2 under the Securities Exchange Act of 1934, which would occur if the market value of our ordinary shares that is held by non-affiliates exceeds $700 million as of the last business day of our most recently completed second fiscal quarter or (iii) the date on which we have issued more than $1 billion in non-convertible debt during the preceding three year period. 
+ 
+Until such time, however, we cannot predict if investors will find our common stock less attractive because we may rely on these exemptions. If some investors find our common stock less attractive as a result, there may be a less active trading market for our common stock and our stock price may be more volatile. 
+ 
+The volatility of the price of gold or silver could adversely affect our future operations and, if warranted, our ability to develop our properties.
+ 
+The potential for profitability of our operations, the value of our properties and our ability to raise funding to conduct continued exploration and development, if warranted, are directly related to the market prices of gold, silver and other precious metals. The prices of such metals fluctuate widely and are affected by numerous factors beyond our control, including interest rates, expectations for inflation, speculation, currency values (in particular the strength of the U.S. dollar), global and regional demand, political and economic conditions and production costs in major metal producing regions of the world. The price of gold may also have a significant influence on the market price of our common stock and the value of our properties. Our decision to put a mine into production and to commit the funds necessary for that purpose must be made long before the first revenue from production would be received. A decrease in the prices of gold or silver may prevent our property from being economically mined or result in the write-off of assets whose value is impaired as a result of lower gold, zinc, lead, copper or silver prices. The prices of gold and silver is affected by numerous factors beyond our control, including inflation, fluctuation of the United States dollar and foreign currencies, global and regional demand, the sale of gold and silver by central banks, and the political and economic conditions of major gold and silver producing countries throughout the world. 
+ 
+We are in the exploration stage and the nature of mineral exploration and production activities involves a high degree of risk and the possibility of uninsured losses. 
+ 
+We have a limited operating history and must be considered in the exploration stage. Our operations will be subject to all the risks inherent in the establishment of a developing enterprise and the uncertainties arising from the absence of a significant operating history. We are in the exploration stage and potential investors should be aware of the difficulties normally encountered by enterprises in the exploration stage. If our business plan is not successful, and we are not able to operate profitably, investors may lose some or all of their investment in our company. 
+ 
+Exploration for and the production of minerals is highly speculative and involves greater risk than many other businesses. Many exploration programs do not result in the discovery of mineralization, and any mineralization discovered may not be of sufficient quantity or quality to be profitably mined. Our operations are, and any future development or mining operations we may conduct will be, subject to all of 
+15
+the operating hazards and risks normally incident to exploring for and development of mineral properties, such as, but not limited to:
+ 
+oEconomically insufficient mineralized material;  
+oFluctuation in production costs that make mining uneconomical;  
+oLabor disputes;  
+oUnanticipated variations in grade and other geologic problems;  
+oEnvironmental hazards;  
+oWater conditions;  
+oDifficult surface or underground conditions;  
+oIndustrial accidents;  
+oMetallurgic and other processing problems;  
+oMechanical and equipment performance problems;  
+oFailure of pit walls or dams;  
+oUnusual or unexpected rock formations;  
+oPersonal injury, fire, flooding, cave-ins and landslides; and  
+oDecrease in the value of mineralized material due to lower gold or silver prices.  
+ 
+Any of these risks can materially and adversely affect, among other things, the development of properties, production quantities and rates, costs and expenditures, potential revenues and production dates. We currently have limited insurance to guard against some of these risks. If we determine that capitalized costs associated with any of our mineral interests are not likely to be recovered, we would incur a write down of our investment in these interests. All of these factors may result in losses in relation to amounts spent which are not recoverable, or result in additional expenses.
+ 
+Difficult conditions in the global capital markets and the economy generally may materially adversely affect our business and results of operations, and we do not expect these conditions to improve in the near future.
+ 
+Our results of operations are materially affected by conditions in the domestic capital markets and the economy generally. The stress experienced by domestic capital markets that began in the second half of 2007 has continued and substantially increased into the present. Since 2012, the availability of financing for junior mineral exploration companies has greatly decreased.  Declining commodities prices resulting from a slowdown in the Chinese economy has recently (2105) made financing difficult even for major mining companies.  In addition, the fixed-income markets are experiencing a period of extreme volatility which has negatively impacted market liquidity conditions. These factors can affect the value of our mining claims and our ability to acquire necessary financing for our exploration and operating activities. 
+ 
+Title to our properties may be challenged or defective.
+ 
+Our planned future operations and exploration activities may require amendments to our currently approved permits from various governmental authorities. Our operations are and will continue to be governed by laws and regulations governing prospecting, mineral exploration, exports, taxes, labor standards, occupational health, waste disposal, toxic substances, land use, environmental protection, mine safety, mining royalties and other matters. There can be no assurance that we will be able to acquire all required licenses, permits, amendments or property rights on reasonable terms or in a timely manner, or at all, and that such terms will not be adversely changed, that required extensions will be granted, or that the issuance of such licenses, permits or property rights will not be challenged by third parties.
+ 
+We attempt to confirm the validity of our rights of title to, or contract rights with respect to, each mineral property in which we have a material interest. However, we cannot guarantee that title to our properties will not be challenged. Our mineral properties may be subject to prior unregistered agreements, interests or native land claims, and title may be affected by undetected defects. There may be valid challenges to the title of any of the claims comprising our mineral properties that, if successful, could 
+16
+impair possible development and/or operations with respect to such properties in the future. Challenges to permits or property rights, whether successful or unsuccessful; changes to the terms of permits or property rights; or a failure to comply with the terms of any permits or property rights that have been obtained, could have a material adverse effect on our business by delaying or preventing or making continued operations economically unfeasible.
+ 
+We are subject to complex environmental and other regulatory risks, which could expose us to significant liability and delay, and potentially the suspension or termination of our development efforts.
+ 
+Compliance with environmental quality requirements and reclamation laws imposed by federal, state, provincial, and local governmental authorities may:
+ 
+orequire significant capital outlays;  
+omaterially affect the economics of a given property;  
+ocause material changes or delays in our intended activities; and  
+opotentially expose us to lawsuits.  
+ 
+These regulations mandate, among other things, the maintenance of air and water quality standards and land reclamation. They also set forth limitations on the generation, transportation, storage and disposal of solid and hazardous waste. Applicable authorities may require us to prepare and present data pertaining to the effect or impact that any proposed exploration for or production of minerals may have upon the environment. The requirements imposed by any such authorities may be costly, time consuming, and may delay operations. Future legislation and regulations designed to protect the environment, as well as future interpretations of existing laws and regulations, may require substantial increases in equipment and operating costs and delays, interruptions, or a termination of operations. We cannot accurately predict or estimate the impact of any such future laws or regulations, or future interpretations of existing laws and regulations, on our operations.
+ 
+Historic mining activities have occurred on certain of our properties. If such historic activities have resulted in releases or threatened releases of regulated substances to the environment, potential for liability may exist under federal or state remediation statutes. Such liability would include remediating any damage that we may have caused, including costs for removing or remediating the release and damage to natural resources, including ground water, as well as the payment of fines and penalties. Except as discussed in our periodic filings with the SEC, we are not aware of any such claims under these statutes at this time and cannot predict whether any such claims will be asserted in the future.
+ 
+We may produce air emissions and pollutions that could fall under the jurisdiction of U.S. federal laws.
+ 
+Under the U.S. Resource Conservation and Recovery Act, mining companies may incur costs for generating, transporting, treating, storing, or disposing of hazardous waste, as well as for closure and post-closure maintenance once they have completed mining activities on a property. Our mining operations may produce air emissions, including fugitive dust and other air pollutants, from stationary equipment, storage facilities, and the use of mobile sources such as trucks and heavy construction equipment which are subject to review, monitoring and/or control requirements under the Federal Clean Air Act and state air quality laws. Permitting rules may impose limitations on our production levels or create additional capital expenditures in order to comply with the rules.
+ 
+Legislation has been proposed that would significantly affect the mining industry. 
+ 
+Periodically, members of the U.S. Congress have introduced bills which would supplant or alter the provisions of the General Mining Law of 1872, which governs the unpatented claims that we control with respect to our U.S. properties. One such amendment has become law and has imposed a moratorium on the patenting of mining claims, which reduced the security of title provided by unpatented claims such as those on our U.S. properties. If additional legislation is enacted, it could substantially increase the cost 
+17
+of holding unpatented mining claims by requiring payment of royalties and could significantly impair our ability to develop mineral estimates on unpatented mining claims. Such bills have proposed, among other things, to make permanent the patent moratorium, to impose a federal royalty on production from unpatented mining claims and to declare certain lands as unsuitable for mining. Although it is impossible to predict at this time what royalties may be imposed in the future, the imposition of such royalties could adversely affect the potential for development of such mining claims, and the economics of existing operating mines on federal unpatented mining claims. Passage of such legislation could adversely affect our business.
+ 
+Our operations are subject to permitting requirements which could require us to delay, suspend or terminate our operations on our mining properties. 
+ 
+Our operations, including on-going exploration drilling programs, require permits from the state and federal governments, including permits for the use of water and for drilling wells for water. We may be unable to obtain these permits in a timely manner, on reasonable terms or on terms that provide us sufficient resources to develop our properties, or at all. Even if we are able to obtain such permits, the time required by the permitting process can be significant. If we cannot obtain or maintain the necessary permits, or if there is a delay in receiving these permits, our timetable and business plan for exploration of our properties will be adversely affected, which may in turn adversely affect our results of operations, financial condition and cash flows. 
+ 
+Through May 31, 2019, we expect to incur approximately $160,000 in permitting costs. There can be no assurance we will be able to acquire the funding needed. 
+ 
+We may face a shortage of water.
+ 
+Water is essential in all phases of the exploration, development and operation of mineral properties. With the nature of our operations, water is used in such processes as exploration, drilling, testing, dust suppression, milling and tailings disposal. The lack of available water and the cost of acquisition may make an otherwise viable project economically impossible to complete.
+ 
+Global climate change is an international concern and could impact our ability to conduct future operations. 
+ 
+Global climate change is an international issue and receives an enormous amount of publicity. We would expect that the imposition of international treaties or federal, state or local laws or regulations pertaining to mandatory reductions in energy consumption or emissions of greenhouse gasses could affect the feasibility of our mining projects and increase our operating costs.
+ 
+Because access to the mineral property may be restricted by inclement weather or other hazards, we may be delayed in our development efforts.
+ 
+We are subject to risks and hazards, including environmental hazards, the encountering of unusual or unexpected geological formations, cave-ins, flooding, earthquakes and periodic interruptions due to inclement or hazardous weather conditions. As a result, access to our mineral properties may be restricted during parts of the year. During the winter months, heavy snowfall can make it difficult to undertake work programs. Frequent inclement weather in the winter months can make development and mining activities difficult for short periods of time.
+ 
+We may face a shortage of supplies, equipment and materials.
+ 
+The mineral industry has experienced from time to time shortages of certain supplies, equipment and materials necessary in the exploration, evaluation, development and production of mineral deposits. The prices at which such supplies and materials are available have also greatly increased. Our planned 
+18
+operations could be subject to delays due to such shortages and further price escalations could increase our costs for such supplies, equipment and materials. Our experience and that of others in the industry is that suppliers are often unable to meet contractual obligations for supplies, equipment, materials, and services, and that alternate sources of supply do not exist.
+ 
+The market for obtaining desirable properties, investment capital, and outside engineers and consultants is highly competitive.
+ 
+Presently, we employ a limited number of full-time employees, utilize outside consultants, and in large part rely on the personal efforts of our officers and directors. Our success will depend, in part, upon the ability to attract and retain qualified outside engineers and other professionals to develop and operate our mineral properties, in addition to obtaining investment capital to conduct our mining operations. We believe that we will be able to attract competent employees and consultants, but no assurance can be given that we will be successful in this regard as competition for these professionals is highly competitive. If we are unable to engage and retain the necessary personnel, our business would be materially and adversely affected.
+ 
+We depend upon a limited number of personnel and the loss of any of these individuals could adversely affect our business. 
+ 
+If any of our current executive employees were to die, become disabled or leave our company, we would be forced to identify and retain individuals to replace them. Messrs. Jack Wagenti, Jerry Scott, Frederick Dunne, Jr. and Arthur Ackerman are our critical employees at this time.  In addition to the executives, we rely heavily on a several staff people that have extensive knowledge of our properties and mine plans. There is no assurance that we can find suitable individuals to replace them or to add to our employee base if that becomes necessary. We are entirely dependent on these individuals as our critical personnel at this time. We have no life insurance on any of our employees, and we may be unable to hire a suitable replacement for them on favorable terms, should that become necessary.
+ 
+We have incurred substantial losses since our inception and may never be profitable.
+ 
+Since its formation on January 25, 2012, Placer has incurred substantial losses and AIVN has accumulated substantial losses during its existence.  In addition, we presently have no revenue.  During the reporting period ended May 31, 2018, we had limited revenues from operations and have reported an operating loss from inception of approximately $6,200,000. We expect to continue to incur losses unless and until we generate enough revenue from production to fund continuing operations including exploration and development costs. We expect such losses or the monthly burn rate to be in the range of $40,000 to $60,000. There is no assurance we will be profitable for any quarterly or annual period. Our failure to report profits may adversely affect the price of our common stock and you may lose all or part of your investment. 
+ 
+Our executive management has limited experience in managing a public company registered with the SEC and as such compliance with compliance with the SEC rules will be time consuming, difficult and costly. 
+ 
+Our executive officers have limited experience managing a public company. Thus, it will be time consuming, difficult and costly for us to develop and implement the internal controls and reporting procedures required by the SEC. We may need to hire additional financial reporting, internal control, and other finance staff to develop and implement appropriate internal controls and reporting procedures. 
+ 
+Some of our executive management have other business activities in which they are engaged concurrently with our operations and therefore may not devote 100% of their business time to our business. 
+19
+Some of our executive officers may engage in other business activities thereby failing to devote all of their business time to our business. Nevertheless, such officers have agreed to devote no less than full time (or up to thirty (30) hours per week) to our operations. 
+ 
+We currently have not entered into forward sales, commodity, derivatives or hedging arrangements with respect to our gold production and as a result we are exposed to the impact of any significant decrease in the gold and silver prices.
+ 
+Currently, we have produced gold from our pilot plant in Baja California.  We have not entered into forward sales, commodity, derivative or hedging arrangements to establish a price in advance for the sale of future production, although we may do so in the future. As a result, we may realize the benefit of any short-term increase in the gold price, but we are not protected against decreases in gold and silver prices, and if gold and silver prices decrease significantly, our expected future revenues may be materially adversely affected.
+ 
+Our ability to become and remain profitable over the long term will depend on our ability to identify, explore and develop our current and additional properties. 
+ 
+Gold and silver properties are wasting assets. They eventually become depleted or uneconomical to continue mining. Currently, we have not produced any gold or silver from our properties. We are in the exploration stage and potential investors should be aware of the difficulties normally encountered by enterprises in the exploration stage. Our ability to become and remain profitable over the long term depends on our ability to finalize the design, permit, development and profitable extraction and recovery of mineral resources beyond our current planned mine life. If our ability to expand the operations beyond their current planned mined lives doesn’t occur, we may seek to acquire other precious and base metals properties beyond our current properties. The acquisition of precious and base metals properties and their exploration and development are subject to intense competition. Companies with greater financial resources, larger staff, more experience and more equipment for exploration and development may be in a better position than us to compete for such mineral properties. If we are unable to find, develop, and economically mine new properties, we most likely will not be profitable on a long-term basis and the price of our common stock may suffer.
+ 
+Since we have a very limited operating history, investors have little basis to evaluate our ability to operate. 
+ 
+Our activities to date have been focused on raising financing, exploring our properties and preparing those properties for production. Although some of our mine and concentrating facilities have previously operated, these operations were carried out under different ownership and, as a consequence we face all of the risks commonly encountered by other businesses that lack an established operating history, including the need for additional capital and personnel and intense competition. There is no assurance that our business plan will be successful.
+ 
+The construction of our mines and optimization and continued operation of our mills are subject to all of the risks inherent in construction, start-up and operations. 
+ 
+These risks include potential delays, cost overruns, shortages of material or labor, construction defects, breakdowns and injuries to persons and property. We expect to engage self-employed personnel, subcontractors and material suppliers in connection with the construction and development of our mine projects. While we anticipate taking all measures which we deem reasonable and prudent in connection with construction of the mines and the operation of the mills, there is no assurance that the risks described above will not cause delays or cost overruns in connection with such construction or operation. Any delays would postpone our anticipated receipt of revenue and adversely affect our operations, which in turn may adversely affect the price of our stock.
+20
+We do not insure against all of the risks to which we may be subject in our operations. 
+ 
+While we currently maintain insurance against general commercial liability claims and the physical assets at our projects, we do not maintain insurance to cover all of the potential risks associated with our operations. We might be subject to liability for environmental, pollution or other hazards associated with mineral exploration and development, which risks may not be insured against, which may exceed the limits of our insurance coverage, or which we may elect not to insure against because of premium costs or other reasons. We may also not be insured against interruptions to our operations. Losses from these or other events may cause us to incur significant costs which could materially adversely affect our financial condition and our ability to fund activities on our property. A significant loss could force us to reduce or terminate our operations.
+ 
+We may require significant additional capital to fund our business plan.
+ 
+We will be required to expend significant funds to determine if proven and probable mineral reserves exist at some of our properties, to continue exploration and if warranted, develop our existing properties and to identify and acquire additional properties to diversify our property portfolio. There can be no assurance that any of the development properties we now hold, or which we may acquire, will contain a commercial ore reserve, and therefore, no assurance that we will ever generate a positive cash flow from the sale of production on such properties. In addition, once we decide to place a property into production, risks still exist that the amount and grade of the reserves may be significantly less than predicted. We have spent and will be required to continue to expend significant amounts of capital for drilling, geological and geochemical analysis, assaying and feasibility studies with regard to the results of our exploration. We may not benefit from these investments if we are unable to identify commercially exploitable mineralized material. 
+ 
+Our ability to obtain necessary funding for these purposes, in turn, depends upon a number of factors, including the status of the national and worldwide economy and the prices of gold and other precious and base metals. Capital markets worldwide have been adversely affected by substantial losses by financial institutions, in turn caused by investments in asset-backed securities. We may not be successful in obtaining the required financing, or if we can obtain such financing, such financing may not be on terms that are favorable to us. Failure to obtain such additional financing could result in delay or indefinite postponement of further mining operations or exploration and development and the possible partial or total loss of our potential interest in our properties.
+ 
+We have already expended significant capital to explore and identify the best properties for development. We currently have no plans to acquire any new properties at this time, as we have already developed an adequate portfolio and currently have the Golden Eagle acquisition under development. We have already developed the necessary water supply to insure the planned production at the development site. 
+ 
+In addition, we have the mining equipment and started a pilot program on placer claims in Baja California, Mexico. There can be no assurance we will be able to obtain funding for the acquisition of additional claims in Baja California, Mexico. Our future anticipated capital requirements will primarily be for permitting and mining in the amount of eight to ten million. We presently do not have funding available and there can be no assurance we will be able to get funding. 
+ 
+We may need additional capital, and the sale of additional shares or other equity securities could result in additional dilution to our stockholders. 
+ 
+In the future, we may raise capital for our mining operations by issuing equity securities, resulting in the dilution of the ownership interests of our present stockholders. Any future issuance of our equity securities may dilute then-current stockholders’ ownership percentages and could also result in a decrease in the fair market value of our equity securities, because our assets would be owned by a larger pool of 
+21
+outstanding equity. We may need to raise additional capital through public or private offerings of our common stock or other securities that are convertible into or exercisable for our common or preferred stock. We may also issue such securities in connection with hiring or retaining employees and consultants (including stock options issued under our equity incentive plans), as payment to providers of goods and services, in connection with future acquisitions or for other business purposes. Such issuances may have a further dilutive effect. Also, the future issuance of any such additional shares of common stock or other securities may create downward pressure on the trading price of our common stock. There can be no assurance that any such future issuances will not be at a price (or exercise prices) below the price at which shares of the common stock are then traded. 
+ 
+Our operating costs could be adversely affected by inflationary pressures especially to labor and fuel costs.
+ 
+During periods of high commodity prices, the mining industry typically attempts to increase production. This may cause significant upward price pressures in the operating costs of mining companies especially in skilled labor. The skilled labor needed by the mining industry may be in tight supply and its cost may increase. Many of our competitors have lower costs and their mines are in better locations that may give them a competitive advantage in employee hiring and retention.
+ 
+The cost of fuel to operate machinery and generate electricity is closely correlated to the price of oil and energy. Increases in and other continued upward price pressures in our operating costs may cause us to generate significantly less operating cash flows than expected which would have an adverse impact to our business.
+ 
+We will continue to incur losses for the foreseeable future. 
+ 
+Prior to completion of the development and pre-production stage, we anticipate that we will incur increased operating expenses without realizing any revenues. We expect to incur continuing and significant losses until such time as we achieve commercial production from our mining operations on our mineral claims. Because of continuing losses, we may exhaust all of our resources and be unable to complete development of our planned mining operations. Our accumulated deficit will continue to increase as we continue to incur losses. We may not be able to generate profits or continue operations if we are unable to generate significant revenues from future mining of the mineral claims and our business will most likely fail. We expect such losses or the monthly burn rate to be in the range of $ 40,000 to $60,000. 
+22
+Risks Related to Our Common Stock
+ 
+There currently is only a minimal public market for our Common Stock. Failure to develop or maintain a trading market could negatively affect the value of our Common Stock and make it difficult or impossible for you to sell your shares.
+ 
+There currently is only a minimal public market for shares of our Common Stock and an active market may never develop. Our Common Stock is quoted on the OTC Markets. The OTC Markets is a thinly traded market and lacks the liquidity of certain other public markets with which some investors may have more experience. We may not ever be able to satisfy the listing requirements for our Common Stock to be listed on an exchange, which are often a more widely-traded and liquid market.  Some, but not all, of the factors which may delay or prevent the listing of our Common Stock on a more widely-traded and liquid market include the following: our stockholders’ equity may be insufficient; the market value of our outstanding securities may be too low; our net income from operations may be too low; our Common Stock may not be sufficiently widely held; we may not be able to secure market makers for our Common Stock; and we may fail to meet the rules and requirements mandated by the several exchanges and markets to have our Common Stock listed.
+ 
+We cannot assure you that the Common Stock will become liquid or that it will be listed on a securities exchange.
+ 
+Until our Common Stock is listed on a national securities exchange such as the New York Stock Exchange or the Nasdaq Stock Market, we expect our Common Stock to remain eligible for quotation on the OTC Markets. In those venues, however, an investor may find it difficult to obtain accurate quotations as to the market value of our Common Stock. In addition, if we fail to meet the criteria set forth in SEC regulations, various requirements would be imposed by law on broker-dealers who sell our securities to persons other than established customers and accredited investors.  Consequently, such regulations may deter broker-dealers from recommending or selling our Common Stock, which may further affect the liquidity of the Common Stock. This would also make it more difficult for us to raise capital.
+ 
+The application of the “penny stock” rules could adversely affect the market price of our common shares and increase your transaction costs to sell those shares.
+ 
+The United States Securities and Exchange Commission (the “SEC”) has adopted rule 3a51-1 which establishes the definition of a “penny stock,” for the purposes relevant to us, as any equity security that has a market price of less than $5.00 per share or with an exercise price of less than $5.00 per share, subject to certain exceptions. For any transaction involving a penny stock, unless exempt, Rule 15g-9 requires:
+ 
+othat a broker or dealer approve a person’s account for transactions in penny stocks, and 
+othe broker or dealer receive from the investor a written agreement to the transaction, setting forth the identity and quantity of the penny stock to be purchased. 
+ 
+In order to approve a person’s account for transactions in penny stocks, the broker or dealer must:
+ 
+oobtain financial information and investment experience objectives of the person, and 
+omake a reasonable determination that the transactions in penny stocks are suitable for that person and the person has sufficient knowledge and experience in financial matters to be capable of evaluating the risks of transactions in penny stocks. 
+ 
+The broker or dealer must also deliver, prior to any transaction in a penny stock, a disclosure schedule prescribed by the SEC relating to the penny stock market, which, in highlight form:
+ 
+osets forth the basis on which the broker or dealer made the suitability determination and 
+23
+othat the broker or dealer received a signed, written agreement from the investor prior to the transaction. 
+ 
+Generally, brokers may be less willing to execute transactions in securities subject to the “penny stock” rules. This may make it more difficult for investors to dispose of our common stock and cause a decline in the market value of our stock.
+ 
+The market price for our common shares is particularly volatile given our status as a relatively unknown company with a small and thinly traded public float, limited operating history and lack of profits which could lead to wide fluctuations in our share price. You may be unable to sell your common shares at or above your purchase price, which may result in substantial losses to you.
+ 
+The market for our common shares is characterized by significant price volatility when compared to seasoned issuers, and we expect that our share price will continue to be more volatile than a seasoned issuer for the indefinite future. The volatility in our share price is attributable to a number of factors. First, as noted above, our common shares are sporadically and thinly traded. As a consequence of this lack of liquidity, the trading of relatively small quantities of shares by our shareholders may disproportionately influence the price of those shares in either direction. The price for our shares could, for example, decline precipitously in the event that a large number of our common shares are sold on the market without commensurate demand, as compared to a seasoned issuer which could better absorb those sales without adverse impact on its share price. Secondly, we are a speculative or “risky” investment due to our limited operating history and lack of profits to date, and uncertainty of future market acceptance for our potential products and services. As a consequence of this enhanced risk, more risk-adverse investors may, under the fear of losing all or most of their investment in the event of negative news or lack of progress, be more inclined to sell their shares on the market more quickly and at greater discounts than would be the case with the stock of a seasoned issuer. Many of these factors are beyond our control and may decrease the market price of our common shares, regardless of our operating performance. We cannot make any predictions or projections as to what the prevailing market price for our common shares will be at any time, including as to whether our common shares will sustain their current market prices, or as to what effect that the sale of shares or the availability of common shares for sale at any time will have on the prevailing market price. 
+ 
+We do not pay dividends on our Common Stock.
+ 
+We have not paid any dividends on our common stock and do not anticipate paying dividends in the foreseeable future. We plan to retain earnings, if any, to finance the development and expansion of our business.
+ 
+Failure to Achieve and Maintain Effective Internal Controls In Accordance With Section 404 Of The Sarbanes-Oxley Act Of 2002 Could Have A Material Adverse Effect On Our Business And Stock Price.
+ 
+Section 404 of the Sarbanes-Oxley Act of 2002 (“the Sarbanes-Oxley Act”) requires that we establish and maintain an adequate internal control structure and procedures for financial reporting and include a report of management on our internal control over financial reporting in our annual report on Form 10-K. That report must contain an assessment by management of the effectiveness of our internal control over financial reporting and must include disclosure of any material weaknesses in internal control over financial reporting that we have identified.
+24
+Rule 144 Related Risk.
+ 
+The SEC adopted amendments to Rule 144 which became effective on February 15, 2008 that apply to securities acquired both before and after that date. Under these amendments, a person who has beneficially owned restricted shares of our common stock for at least six months would be entitled to sell their securities provided that: (i) such person is not deemed to have been one of our affiliates at the time of, or at any time during the three months preceding a sale, (ii) we are subject to the Exchange Act periodic reporting requirements for at least 90 days before the sale and (iii) if the sale occurs prior to satisfaction of a one-year holding period, we provide current information at the time of sale. 
+ 
+Persons who have beneficially owned restricted shares of our common stock for at least six months but who are our affiliates at the time of, or at any time during the three months preceding a sale, would be subject to additional restrictions, by which such person would be entitled to sell within any three-month period only a number of securities that does not exceed the greater of either of the following: 
+ 
+o1% of the total number of securities of the same class then outstanding; or 
+othe average weekly trading volume of such securities during the four calendar weeks preceding the filing of a notice on Form 144 with respect to the sale; 
+ 
+provided, in each case, that we are subject to the Exchange Act periodic reporting requirements for at least three months before the sale. Such sales by affiliates must also comply with the manner of sale, current public information and notice provisions of Rule 144. 
+ 
+Restrictions on the reliance of Rule 144 by Shell Companies or former Shell Companies.
+ 
+Historically, the SEC staff has taken the position that Rule 144 is not available for the resale of securities initially issued by companies that are, or previously were, blank check companies. The SEC has codified and expanded this position in the amendments discussed above by prohibiting the use of Rule 144 for resale of securities issued by any shell companies (other than business combination related shell companies) or any issuer that has been at any time previously a shell company. The SEC has provided an important exception to this prohibition, however, if the following conditions are met: 
+ 
+oThe issuer of the securities that was formerly a shell company has ceased to be a shell company,  
+oThe issuer of the securities is subject to the reporting requirements of Section 14 or 15(d) of the Exchange Act, 
+oThe issuer of the securities has filed all Exchange Act reports and material required to be filed, as applicable, during the preceding 12 months (or such shorter period that the issuer was required to file such reports and materials), other than Current Reports on Form 8-K; and 
+oAt least one year has elapsed from the time that the issuer filed current comprehensive disclosure with the SEC reflecting its status as an entity that is not a shell company. 
+ 
+As a result, it is likely that pursuant to Rule 144, stockholders who receive our restricted securities in a business combination will not be able to sell our shares without registration unless we remain current in our filing with the SEC of periodic reports pursuant to the 1934 Act.
+ 
+Item 1B.  Unresolved Staff Comments 
+ 
+We are a smaller reporting company as defined by Rule 12b-2 of the Securities Exchange Act of 1934 and are not required to provide the information under this item. 
+25
+Item 2.  Properties.
+ 
+See our mining properties in Item 1 Business. In addition, we lease office space from our President at no charge to us under an oral arrangement between the parties.
+ 
+Item 3.  Legal Proceedings.
+ 
+Except as stated below, the Company is not presently a party to any material litigation nor, to the knowledge of Management, is any litigation threatened against the Company, which may materially affect the business of the Company or its assets. 
+ 
+Pending Litigation.
+ 
+1.       American International Ventures, Inc v. You Export, Inc. a/k/a Easy Export, Inc. and Fernando Rojas Case No.:  37-2014-00001664-CU-CO-CTL
+ 
+The Complaint has been filed in February 2014 against the defendants based on breach of contract, breach of the covenant of good faith and fair dealing, unjust enrichment and theft in connection with certain equipment of the Company. Service was obtained on the Defendants on June 24, 24, 2014 and Proof of Service was filed with the Superior Court of California, County of San Diego on July 18, 2014.  As of this date, the Defendants have not filed a response and the Company is proceeding to obtain a Default Judgment against the Defendants.
+  
+Item 4.  Mine Safety Disclosures.
+ 
+Mining operations and properties in the United States are subject to regulation by the Federal Mine Safety and Health Administration (“MSHA”) under the Federal Mine Safety and Health Act of 1977 (the “Mine Act”). Pursuant to Section 1503(a) of the Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010 (the “Dodd-Frank Act”), issuers are required to disclose specified health and safety violations, orders and citations, related assessments and legal actions, and mining-related fatalities.
+ 
+During the period ended May 31, 2018, we did not conduct mining operations nor maintain any mining properties in the US.  Consequently, we were not subject to any health or safety violations, orders and citations, related assessments and legal actions, and mining-related fatalities during the period ended May 31, 2018. 
+26
+PART II
+ 
+Item 5.  Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities.
+ 
+Market Information OTC Markets
+Our common stock currently trades on the OTC Markets Pink under the symbol “AIVN”. The table below sets forth, for the fiscal quarters indicated, the high and low bid prices per share of our common stock as reflected on the pink sheets. The quotations represent inter-dealer prices without adjustment for retail markups, markdowns or commissions, and may not necessarily represent actual transactions. 
+
+ 
+Due to the price of our common stock, as well as the fact that we are not listed on NASDAQ or a national securities exchange, our stock is characterized as a “penny stock” under applicable securities regulations. Our stock will therefore be subject to rules adopted by the SEC regulating broker-dealer practices in connection with transactions in penny stocks. The broker or dealer proposing to affect a transaction in a penny stock must furnish the customer a document containing information prescribed by the SEC and obtain from the customer an executed acknowledgement of receipt of that document. The broker or dealer must also provide the customer with pricing information regarding the security prior to the transaction and with the written confirmation of the transaction. The broker or dealer must also disclose the aggregate amount of any compensation received or receivable by him in connection with such transaction prior to consummating the transaction and with the written confirmation of the trade. The broker or dealer must also send an account statement to each customer for which he has executed a transaction in a penny stock each month in which such security is held for the customer’s account. The existence of these rules may influence the price of our stock, and the willingness of certain brokers to effect transactions in our stock.
+Transfer Agent
+Issuer Direct Transfer Company, Inc. is our transfer agent for our common stock. The office of Issuer Direct is located at 1981 Murray Holladay Road, Suite 100, Salt Lake City, UT 84117 and its telephone number is (801) 272-9294.
+27
+Equity Compensation Plan Information
+On March 23, 2012, the Company’s Board of Directors approved the 2012 Stock Option Plan (the “Plan”), which was approved by the shareholders on November 9, 2012. Members of the Board of Directors each received five hundred thousand (500,000) options to purchase Company common stock at an option price of $0.36 for a total of one million five hundred thousand shares (1,500,000).
+Recent Sales of Unregistered Equity Securities.
+During the twelve months ending May 31, 2018, we issued 1,250,000 shares of common stock as follows: 
+o750,000 common shares to our three Directors & Officers for services rendered in fiscal year 2017. 
+o250,000 common shares as compensation to an unrelated party. 250,000 donation.  
+ 
+Each investor was an accredited investor and agreed to hold such shares for investment purposes.  In addition, the shares issued to the investor contained a restricted legend.  All the securities issuances referred to above were exempt from registration pursuant to Section 4(2) of the Securities Act of 1933, as amended (the “Act”) or the rules and regulations promulgated there under, including Regulation D and Rule 701.
+Issuer Repurchases of Equity Securities
+None.
+Item 6. Selected Financial Data. 
+Not applicable.
+ 
+Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations. 
+ 
+Management’s discussion and analysis of financial condition, changes in financial condition and results of operations is provided as a supplement to the accompanying consolidated financial statements and notes to help provide an understanding of the Company’s financial condition and results of operations.
+ 
+ 
+Overview
+ 
+Currently, our primary focus is on gold and silver properties. Gold and silver properties are wasting assets. They eventually become depleted or uneconomical to continue mining. Currently, we have produced nominal amounts of gold or silver from our properties. We are in the exploration stage and potential investors should be aware of the difficulties normally encountered by enterprises in the exploration stage. Our ability to become and remain profitable over the long term depends on our ability to finalize the design, permit, development and profitable extraction and recovery of mineral resources beyond our current planned mine life. If our ability to expand the operations beyond their current planned mined lives doesn’t occur, we may seek to acquire other precious and base metals properties beyond our current properties. The acquisition of precious and base metals properties and their exploration and development are subject to intense competition. Companies with greater financial resources, larger staff, more experience and more equipment for exploration and development may be in a better position than us to compete for such mineral properties. 
+28
+We are considered an exploration stage company for accounting purposes because we have not demonstrated the existence of proven or probable reserves. In accordance with accounting principles generally accepted in the United States of America, all expenditures for exploration and evaluation of our properties have been expensed as incurred. Furthermore, unless our mineralized material is classified as proven or probable reserves, substantially all expenditures have been or will be expensed as incurred. Since substantially all of our expenditures to date have been expensed and we expect to expense significant expenditures during the fiscal year 2017, most of our investment in mining properties do not appear as an asset on our balance sheet.  
+ 
+We must obtain additional financing to continue our operations. There can be no guarantee that we will be able to obtain additional funding on terms that are favorable to the Company or at all. As an exploration stage company, the Company has no current ability to generate revenue and no plans to do so in the foreseeable future. Our assets consist of cash, prepaid expenses, nominal equipment and certain mineral property interests. There can be no assurance that we will obtain sufficient funding to continue operations or, if we do receive funding, to generate revenues in the future or to operate profitably in the future. These conditions raise substantial doubt about our ability to continue as a going concern.
+ 
+Results of Operations. 
+ 
+Revenue
+ 
+The Company had $41,310 of revenue during the year ended May 31, 2018, and revenue of $168,798 during the previous year.  Mining operations were suspended early in the 2015 fiscal year and the Company began extracting minerals for test purposes during the 2017 and 2018 years.  These extractions have been limited in scope and amount, and have now been suspended. 
+ 
+Cost of Goods Sold
+ 
+Cost of goods sold, which relates to the minerals extracted for test purposes, was $62,708 in the 2018 year and $255,513 in the 2017 year.   
+ 
+ 
+Operating expenses
+ 
+We incurred operating expenses in the amount of $688,877 during the year ended May 31, 2018, whereas we incurred $398,216 during the year ended May 31, 2017. The increase of expenses reflects intense effort to solve the problems that caused mining activities to be suspended and director compensation, partially offset by reductions in other areas. 
+ 
+Interest Expense
+ 
+Interest expense for the year ended May 31, 2018 and for the year ended May 31, 2017 was $16,356 and $27,383, respectively.  This reduction is the result of a correction during the 2017 year, which did not occur during the 2018 year.    
+ 
+Provision for Income Taxes
+ 
+Losses incurred during the year ended May 31, 2018 and in previous years are available to be carried forward and offset against U.S. taxable income; consequently, no provision was required for U.S. income taxes.  
+ 
+Other Income
+29
+When the Company sold its Bruner property to Canamex Resources U.S., Inc. in October 2015, it retained a 1.5% net smelter return (NSR) royalty.  In August 2018, the Company entered into an agreement with Canamex for the sale of that smelter royalty.  The sale price is $450,000 which is to be paid with 112,500 GOLD USA Security Tokens.
+ 
+Net Loss
+The Company realized a net loss of $726,631 in the year ended May 31, 2018, compared with a net loss of $483,615 in the year ended May 31, 2017.
+ 
+Liquidity and Capital Resources
+As shown in the accompanying financial statements, except for the results of the year ended May 31, 2016, we have experienced losses since inception (January 25, 2012), and we have had, except for the results of the 2016 year, recurring negative cash flows from operations; and presently we do not have sufficient resources to accomplish our objectives during the next twelve months.
+ 
+As of May 31, 2018, we had total assets of $1,495,362, including net fixed assets of $145,695, and mining claims of $1,289,822.  Our current liabilities totaled $143,824; our long term debt was nil; and stockholders' equity amounted to $1,351,538.
+ 
+Our financial statements for the fiscal year ended May 31, 2018, are contained in our Annual Report in this Form 10-K.  The Report of the Independent Registered Public Accounting Firm includes an explanatory paragraph that describes substantial doubt about our ability to continue as a going concern.  Our present plans to overcome these difficulties, the realization of which cannot be assured, include, but are not limited to, continuing efforts to raise new funding in the public and private markets, and to sell some or all of our assets.
+ 
+There is no assurance that commercially viable mineral deposits exist in sufficient amounts in our areas of exploration to justify exploitation. Further exploration will be required before a final evaluation as to the economic and legal feasibility of the mining rights we own can occur. Because we are still in an exploration stage, we have limited revenue and, except for the results of the year ended May 31, 2016, have had only losses since our inception. We have made no commitments for capital expenditures over the next 12 months.
+ 
+Depending on market conditions and the options available to us, we may attempt to enter into a joint venture with an operating company on the Nevada claims, or we may seek equity or debt financing (including borrowing from commercial lenders) or we may consider a sale of the Company or its assets.
+  
+We do not intend to hire any additional employees at this time. All of the work related to our business will be conducted by our current employees and independent contractors. To the extent we receive funding, this is likely to change. 
+ 
+All of the Company’s plans are predicated on the Company’s ability to raise sufficient capital to implement and complete such plan, which we cannot assure will occur in a timely manner, on terms acceptable to the Company, or at all. Because the exploration phase of our business plan is essentially a research and development activity, the results of our exploration activities will have a significant effect on our future business model. This model can change substantially based upon our exploration activities, liquidity position or other factors. Accordingly, estimating expenditures is an imprecise process, made even more so by the unpredictable nature of our business plan. We believe it would, therefore, not be helpful to estimate beyond the next 12 months. Even these estimates are subject to change depending on our ability to raise additional capital and execute our business plan in accordance with our estimates. 
+30
+Item 7A. Quantitative and Qualitative Disclosures About Market Risk. 
+ 
+Not Applicable. 
+31
+Item 8. Financial Statements
+32
+AMERICAN INTERNATIONAL VENTUES, INC.
+(An Exploration Stage Company)
+CONSOLIDATED BALANCE  SHEETS
+ 
+
+ 
+ 
+The accompanying notes are an integral part of these financial statements
+33
+AMERICAN INTERNATIONAL VENTUES, INC.
+(An Exploration Stage Company)
+CONSOLIDATED STATEMENTS OF OPERATIONS
+ 
+
+ 
+ 
+ 
+ 
+ 
+The accompanying notes are an integral part of these financial statements
+34
+
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+CONSOLIDATED STATEMENT OF CHANGES IN STOCKHOLDERS’ EQUITY
+Years Ended May 31, 2017 and 2018
+ 
+ 
+
+ 
+ 
+ 
+ 
+The accompanying notes are an integral part of these financial statements
+35
+
+. AMERICAN INTERNATIONAL VENTUES, INC.
+(An Exploration Stage Company)
+CONSOLIDATED STATEMENTS OF CASH FLOWS
+ 
+
+ 
+The accompanying notes are an integral part of these financial statements.
+36
+
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+ 
+Note 1. ORGANIZATION AND BUSINESS
+ 
+Organization
+ 
+On March 23, 2012 the Company entered into a Share Exchange Agreement with the shareholders of Placer Gold Prospecting, Inc. (Placer) under which 163,250,000 shares of Company common stock was exchanged for an equal number of shares of Placer common stock. This share exchange agreement was treated as a reverse recapitalization, under which the legal acquire (Placer) was treated as the accounting acquirer and the equity accounts of the Company were adjusted to reflect a reorganization. Inasmuch as Placer was treated as the accounting acquirer, whenever historical financial information is presented, it will be Placer information. Placer was organized January 25, 2012.
+ 
+Business
+ 
+The Company is in the business of mining for precious metals. It is currently an exploration stage company as set forth in Securities and Exchange Commission (SEC) Industry Guide #7 and, accordingly, expenses all exploration costs until proven and probable reserves are established.
+ 
+The Company formed a subsidiary in Mexico (AIVN de Mexico) during 2013 to exploit mining claims it has acquired in the Mexican state of Baja, California.  The Company acquired an 85% interest in this subsidiary, which was later increased to 90%; the balance of the shares are owned by officers of the subsidiary.  During 2017 the Company transferred 5 shares (5.56%) for cash ($200,000) and debt redemption ($300,000).
+ 
+Basis of Consolidation
+ 
+The consolidated financial statements include the accounts of the Company and its subsidiary.  All significant intercompany balances and transactions have been eliminated in consolidation.
+ 
+Note 2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES
+ 
+a. Cash
+For purposes of the Statement of Cash Flows, the Company considers all short-term debt securities purchased with an original maturity of three months or less to be cash equivalents.
+ 
+b. Fair Value of Financial Instruments
+The carrying amounts of the Company’s financial instruments, which include cash equivalents, accounts payable and accrued expenses, and notes payable, approximate their fair values at May 31, 2018.
+ 
+c. Income (Loss) Per Share
+Basic earnings (loss) per share is computed by dividing the net income (loss) available to common shareholders for the period by the weighted average number of shares of common stock outstanding during that period. During periods in which a net loss has occurred, outstanding options, warrants, and convertible notes are excluded from the calculation of weighted average number of shares outstanding as their inclusion would be antidilutive.
+37
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (continued)
+ 
+d. Income Taxes
+ 
+The Company accounts for income taxes in accordance with current accounting guidance, which requires the use of the “liability method”. Accordingly, deferred tax liabilities and assets are determined based on differences between the financial statement and tax bases of assets and liabilities, using enacted tax rates in effect for the year in which the differences are expected to reverse. Current income taxes are based on the income that is currently taxable.
+ 
+ 
+e. Marketable Securities
+Marketable securities, when owned, are classified as available-for-sale and are carried at fair value. Unrealized gains and losses on these securities are recognized as increases or decreases in accumulated other comprehensive income.
+ 
+f. Fixed Assets
+Fixed assets are recorded at cost. Depreciation is computed using the straight line method, with useful lives of seven years for mining equipment and five years for vehicles.
+ 
+g. Use of Estimates
+The preparation of financial statements in conformity with generally accepted accounting principles requires management to make estimates and assumptions that affect certain reported amounts and disclosures. Accordingly, actual results could differ from those estimates.
+ 
+h. Advertising Costs
+The Company expenses advertising costs when the advertisement occurs. There was no advertising expense during the years ended May 31, 2018 or 2017.
+ 
+i. Segment Reporting
+The Company is organized in one reporting and accountable segment.
+ 
+j. Recognition of Revenue
+Revenue is realized from product sales. Recognition occurs upon shipment to customers, and where the following criteria are met: persuasive evidence of an arrangement exists; delivery has occurred; the sales price is fixed or determinable; and collectability is reasonably assured. Additional revenue from royalties is recognized when persuasive evidence of an arrangement exits, the amount due is fixed or determinable, and collectability is reasonably assured.
+ 
+k. Stock Based Compensation
+The cost of equity instruments issued to non-employees in return for goods and services is measured by the fair value of the goods or services received or fair value of the equity instruments issued, whichever is the more readily determinable. The cost of employee services received in exchange for equity instruments is based on the grant date fair value of the equity instruments issued.
+38
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (continued)
+ 
+l. Exploration Stage Accounting
+The Company is an exploration stage company, as defined in pronouncements of the Financial Accounting Standards Board (FASB) and Industry Guide #7 of the Securities and Exchange Commission. Generally accepted accounting principles govern the recognition of revenue by an exploration stage enterprise and the accounting for costs and expenses. From formation (January 25, 2012) to May 31, 2018, the Company has been in the exploration stage and all its efforts have been devoted to acquiring mining claims, mapping, and assaying. Revenue had been realized beginning with the year ended May 31, 2014 from sales of product by AIVN de Mexico (see Note 5).  
+ 
+m. Investments in Mining Claims
+Mining claims held for development are recorded at the cost of the claims, plus related acquisition costs. These costs will be amortized when extraction begins.
+ 
+n. Mine Development Costs
+Mine development costs include engineering and metallurgical studies, and other related costs to delineate an ore body, the removal of overburden to initially expose an ore body at open pit surface mines and the building of access ways, shafts, lateral access, drifts, ramps and other infrastructure at underground mines. Costs incurred at a mine site before proven reserves have been established are expensed as mine development costs. At the point proven reserves have been established at a mine site, such costs will be capitalized and will be written off as depletion expense as the minerals are extracted.
+ 
+As of May 31, 2018, none of the mine concessions met the requirements for proven reserves; development costs are therefore expensed.
+ 
+o. Impairment
+The Company performs a review for potential impairment of long-lived assets whenever an event or change in circumstances indicates that the carrying value of an asset may not be recoverable.
+ 
+p.  Foreign Currency Translation
+ 
+The assets of the Mexican subsidiary are in Mexico.  The Mexican subsidiary depends on the ability of the parent company to raise cash which is transferred to the subsidiary to meet its operating cash needs.  Therefore, the Company's management has determined that the functional currency of the Mexican subsidiary is the US dollar.  Since that is the case, the Company remeasures its subsidiary financial statements in US dollars.  Any gains or losses are reflected on the Statements of Operations.
+39
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 2. SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (continued)
+ 
+The accounts of the Mexican subsidiary are remeasured in US dollars as follows:
+ 
+(a)  Monetary assets and liabilities are translated based on the rates of exchange in effect at balance sheet dates.
+ 
+(b)  Non-monetary assets, liabilities, and equity accounts are translated at the exchange rates prevailing at the times of acquisition of assets, assumption of liabilities or equity investments.
+ 
+(c)  Revenues and expenses are translated at the average exchange rates for each period, except for charges for amortization and depreciation of non-monetary assets which are translated at the rates associated with the assets.
+ 
+q. New Accounting Pronouncements
+The Company does not believe the adoption of recently issued pronouncements will have a significant effect on Company results of operations, financial position, or cash flows.
+ 
+Note 3. RELATED PARTY TRANSACTIONS
+ 
+During the year ended May 31, 2018, the Company issued 750,000 shares of Company stock, valued at $43,750,        to its directors.
+ 
+During the year ended May 31, 2017, the Company issued 750,000 shares (valued at $16,312) to its directors.  
+ 
+Note 14 provides additional information concerning transactions with related parties.
+ 
+ 
+Note 4. GOING CONCERN AND LIQUIDITY
+ 
+As shown in the accompanying financial statements, the Company has experienced losses since its formation totaling $7,420,840, and presently does not have sufficient resources to meet its outstanding liabilities or accomplish its objectives during the next twelve months. This lack of liquidity raises substantial doubt about the ability of the Company to continue as a going concern.  Management's current plans to overcome this problem, the realization of which cannot be assured, include development of the Company's Mexican mining claims and securing financing to support these development plans.
+40
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 5. MINING CLAIMS
+ 
+The main activity of the Company will be the exploitation of mineral resources from its mining claims. Since its inception, the Company has acquired mining claims, in both the U.S. and Mexico, and is currently exploring these claims and expects to begin exploiting them during the next year.  Mining began in June 2013 on a claim acquired by AIVN de Mexico and sales were realized from this activity during the years ended May 31, 2013, 2014, and 2018. Mining was suspended during 2018.  Resolution of the problems causing the suspension is expected shortly at which time the Company will resume mining at this claim.
+ 
+On December 1, 2015, AIVN de Mexico, S.A. de C.V. (“AIVN Mexico”) purchased ten mining concessions commonly known as “Quesaro” for $50,000 cash.  AIVN de Mexico is 90% owned by the Company.  The concessions are located in Baja, Mexico.  The concessions are as follows:
+ 
+
+ 
+ 
+On December 2, 2016, AIVN purchased Mega Mines LLC for forty-five million common shares.
+The List of gold mining Concessions in the name of Mega Mines LLC located in the State of Michoacán,  
+Mexico:
+ 
+
+ 
+41
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 6. PROPERTY OPTION AGREEMENT
+ 
+On April 1, 2009, the Company entered into a Property Option Agreement with Patriot Gold Corporation (“Patriot”) whereby Patriot could have acquired an undivided right in the Company’s patented Bruner claim, subject to an existing 2% net smelter return in favor of the prior property owners and a 1.5% net smelter return reserved by the Company. The option required annual payments to the Company ranging from $45,000 to $60,000, due on or before April 1 of each year, with a final payment of $1,185,000 due on or before April 1, 2016, for a total payment amount of $1,500,000. A payment of $60,000 was received during the year ended May 31, 2015. During the year ended May 31, 2016, Patriot transferred its option rights to a third party and the Company agreed to accept $744,391 from the third party in full settlement of the option.  The Company retained its right to a 1.5% net smelting return.
+ 
+Note 7.  WARRANT LIABILITY
+During the year ended May 31, 2013, the Company issued 2,715,000 warrants to an investment banker, which had "full-ratchet anti-dilution protection".  In accordance with pronouncements of the FASB, these warrants were initially valued at $1,004,550 and have been classified as a liability.  The warrants expired June 30, 2017.  They were periodically revalued by use of a Black Scholes valuation model.  Changes in the value were recorded on the statement of operations.   No adjustment was made during the years ended May 31, 2018 and 2017.
+42
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+ 
+ 
+Note 8. STOCK OPTIONS
+ 
+In January 2005, the Board of Directors approved a stock option plan under which options to purchase 2,000,000 shares of common stock could be issued to key employees and key consultants as determined by the Board of Directors.  During 2005, 1,800,000 options were issued to five directors and a consultant of the Company, all of which were immediately vested. Each option allows the recipient to purchase shares at an exercise price of $.10 per share. An additional 300,000 options were granted to the then Company President during the year ended May 31, 2006 at an exercise price of $.17 per share, all of which have vested. The value of all of these options was expensed in prior years. On January 10, 2007, one of the option recipients resigned and, under the terms of the plan, his 300,000 options were terminated July 10, 2007. During the year ended May 31, 2009, two of the directors resigned and 600,000 options were cancelled on May 29, 2011, in accordance with the terms of the grants.
+ 
+During the year ended May 31, 2010, the Company modified the exercise price and extended the exercise period for the 1,200,000 options that remained outstanding at that time. In addition, 200,000 options were issued to new directors on September 29, 2009. These additional options have fully vested. The value of the modification and of the additional options has been expensed in the years the modification and grant occurred.
+ 
+During fiscal year 2013, the Company shareholders adopted the 2012 option plan, approved in accordance with Delaware Corporation General Law, by which the Board can issue 5,000,000 options to purchase common stock.  Under the plan, 1,500,000 options were granted during the year ended May 31, 2013.
+ 
+During the year ended May 31, 2015, options to purchase 1,500,000 shares of common stock were granted, which were valued at $90,000.  These options are fully vested.
+ 
+The fair value of options granted under these plans was estimated on the date of grant using a Black-Scholes valuation model.
+ 
+The assumptions used in developing the fair value of options during the year ended May 31, 2015 were as follows:
+ 
+
+During the year ended May 31, 2018 all of the remaining options were terminated.
+ 
+There were no options issued or exercised during the years ended May 31, 2018 and 2017.
+43
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+ 
+Note 9. WARRANTS
+ 
+There were 2,715,000 warrants outstanding at May 31, 2017.  These options expired during the year ended May 31, 2018. 
+ 
+Note 10. RENTALS UNDER OPERATING LEASES
+ 
+The Company conducts its U.S. operations from the home of one of its officers. There is no rental agreement for the use of the office. If rent were charged, the amount would be insignificant.  Operations in Mexico are conducted without charge from the home of an employee.  If rent was charged, it would be insignificant.
+ 
+The Company has no operating leases with non cancelable lease terms in excess of one year.
+44
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+ 
+ 
+Note 11. INCOME TAXES
+ 
+The Company has experienced losses during most years since its inception. As a result, it has incurred no Federal income tax. The Internal Revenue Code allows net operating losses (NOL’s) to be carried forward and applied against future profits for a period of twenty years.  An NOL of $4,452,030 had accumulated at May 31, 2018 on U.S. operations and has been carried forward. The potential tax benefit of the NOL’s has been recognized on the books of the Company, but offset by a valuation allowance. If not used, the carryforwards will expire as detailed below.
+ 
+
+ 
+Under current accounting guidance, recognition of deferred tax assets is permitted unless it is more likely than not that the assets will not be realized. The Company has recorded deferred tax assets using statutory rates, as presented below. The valuation reserve increased by $262,808 during the year ended May 31, 2018.
+ 
+
+45
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 11. INCOME TAXES (continued)
+ 
+The effective tax rate is as follows:
+ 
+
+ 
+ 
+Note 12. SUPPLEMENTAL DISCLOSURES OF CASH FLOWS INFORMATION
+ 
+The Company made cash payments for interest of $842 and $634 during the years ended May 31, 2018 and 2017.  The Company did not make cash payments for income taxes during either of those years.
+ 
+The following non-cash financing and investing activities took place during the year ended May 31, 2017.
+ 
+The Company issued 6,750,000 shares of common stock for services during the year ended May 31, 2017.  These shares were valued at $146,813.
+ 
+The Company issued five shares in its subsidiary AIVN de Mexico for $200,000 in cash and for $300,000 of debt cancellation.
+ 
+The Company issued 45 million shares valued at $270,000 for mining rights.
+ 
+The Company issued 3 million shares valued at $18,000 to acquire a $300,000 loan.
+ 
+Note 13.  FIXED ASSETS
+ 
+Fixed assets are located in both the U.S. and in Mexico.  Assets are recorded at cost.  Depreciation is provided by the straight line method, employing useful lives of seven years for mining equipment and five years for vehicles.
+ 
+Balances at May 31, 2018 and 2017 are presented below:
+ 
+
+ 
+ 
+46
+AMERICAN INTERNATIONAL VENTURES, INC.
+(An Exploration Stage Company)
+NOTES TO CONSOLIDATED FINANCIAL STATEMENTS
+May 31, 2018
+ 
+ 
+Note 14.  SUBSEQUENT EVENTS
+ 
+On August 28, 2018, the Company entered into an agreement with Canamex Gold Corp. for the sale of the 1.5% net smelting royalty which was retained by the Company on its sale during the year ended May 31, 2016, of its mining rights in the Brener property which is located in Nevada.  The sale price was $450,000, which is to be paid with 112,500 GOLDUSA Security Tokens. 
+ 
+In accordance with SFAS 165, Company management reviewed all material events through the date of this report and, except as noted in the previous paragraph, there were no material events to report.
+ 
+ 
+47
+Item 9. Changes in and Disagreements with Accountants on Accounting and Financial Disclosure. 
+None.
+Item 9A. Controls and Procedures 
+Evaluation of Disclosure Controls and Procedures 
+ 
+Under the supervision and with the participation of our management, including our Chief Executive Officer and our Chief Financial Officer (the same individual), we undertook an evaluation of the effectiveness of the design and operation of our disclosure controls and procedures (as defined in Securities Exchange Act of 1934, Rules 13a-15(e) and 15d-15(e)) as of the end of the period covered by this report. Based on this evaluation, our Principal Executive Officer and Principal Financial Officer have concluded that such disclosure controls and procedures were not effective to ensure (a) that information required to be disclosed by us in reports that we file or submit under the Securities Exchange Act of 1934, as amended, is recorded, processed, summarized and reported within the time periods specified in Securities and Exchange Commission rules and forms and (b) that information required to be disclosed is accumulated and communicated to management to allow timely decisions regarding disclosure. 
+ 
+Internal Controls over Financial Reporting 
+ 
+Our management is responsible for establishing and maintaining adequate internal control over financial reporting, as defined in Rules 13a-15(f) and 15d-15(f) under the Securities Exchange Act of 1934.  A company’s internal control over financial reporting is a process designed by, or under the supervision of, the company’s principal executive and principal financial officers, or persons performing similar functions, and effected by the company’s board of directors, management, and other personnel, to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles and includes those policies and procedures that (i) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (ii) provide reasonable assurance that transactions are recorded as necessary to permit the preparation of financial statements in accordance with GAAP, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (iii) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company’s assets that could have a material effect on the financial statements. Because of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements.  Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate. 
+ 
+In making its assessment, our management, including the Chief Executive Officer and Chief Financial Officer, used the criteria set forth in Internal Control – Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (“COSO”).  Our management has concluded that internal control over financial reporting was not effective as of May 31, 2017.
+ 
+There were no changes in our internal controls over financial reporting during the fiscal period ended May 31, 2017 that materially affected, or are reasonably likely to materially affect, our internal controls over financial reporting. 
+ 
+This annual report on Form 10-K for the fiscal period ended May 31, 2018 does not include an auditor attestation report on our internal controls over financial reporting inasmuch as no attestation report was required under the rules of the Securities and Exchange Commission applicable to us as in effect at that time. 
+ 
+Item 9B. Other Information. 
+ 
+None.  
+48
+PART III
+ 
+Item 10.  Directors. Executive Officers. Promoters and Control Persons. 
+ 
+DIRECTORS AND EXECUTIVE OFFICERS.
+ 
+The following table sets forth the names and ages of each of the persons designated to become members of the Board of Directors and Executive Officers. 
+ 
+
+ 
+The directors named above will serve until the first annual meeting of our stockholders or until their respective successors have been appointed and duly qualified. Thereafter, directors will be elected for one-year terms at the annual stockholders’ meeting. Officers will hold their positions at the pleasure of the board of directors, absent any employment agreement. There is no arrangement or understanding between any of the directors or officers and any other person pursuant to which any director or officer was or is to be selected as a director or officer, and there is no arrangement, plan or understanding as to whether non-management shareholders will exercise their voting rights to continue to elect the current directors to our board. There are also no arrangements, agreements or understandings between non-management shareholders and management under which non-management shareholders may directly or indirectly participate in or influence the management of our affairs.
+ 
+Mr. Robert G. Polce, Jr. (58)                
+Mr. Polce has lived and worked in the Asia-Pacific region for the past 25 years and has vast experience in business as an executive, principle, consultant and investor. He is a seasoned International Financier and Private Equity Investor. He has acted as Trustee and Trade & Project Financing Specialist for European and Middle Eastern Private Trusts, with a focus on the natural resource and energy sectors.
+Early in his career, while working in Switzerland, he acquired special skills and associations while connected with one of the largest commodity trading houses in the world (with annual sales of over 100 Billion dollars). He also was affiliated with P&F Petro Credit in Zurich in a similar role. 
+Mr. Polce then headed the BBF Trading Group of Companies headquartered in Singapore, serving as the company’s Managing Director for 8 years. The BBF Groups’ activities included mining, timber processing, real estate development and physical commodity trading in 11 countries throughout SE Asia. 
+Mr. Polce is experienced in underwriting public and private capital projects. His specialties include asset-based financing using proven mineral reserves ("In-Ground" assets). He has spent over 30 years in the Pacific Rim providing trade financing and project development including Nickel, Copper and Coal Resources in Indonesia.
+49
+Most recently, Mr. Polce headed the GEO Group of Companies as their Chief Executive Officer. GEO is a diversified mining and mineral asset management company that is involved in energy, natural resource and fuel related industries. GEO has primarily operated in the South East Asian region.
+ 
+ 
+Jack Wagenti (81) was previously Chairman of the Board and Chief Executive Officer of US Precious Metals, Inc. in December 2007 and subsequently resigned in October 2008. Mr. Wagenti had been Chief Financial Officer/Secretary/Treasurer from May of 2002 until the December 2007. Mr. Wagenti was appointed again in August 2010 as Chairman of the Board, Secretary Treasurer and Chief Financial Officer of US Precious Metals, Inc. Mr. Wagenti resigned all positions in US Precious Metals, Inc. November 30, 2011. From 1996 to May 2009, Mr. Wagenti has served in varying capacities of American International Ventures, Inc., a company trading on the Over the Counter Market. Mr. Wagenti resigned as a Director of American International Ventures, Inc. in May of 2009.  Mr. Wagenti was reappointed to the board of American International Ventures, Inc. on February 6, 2012 and all present Officers and Directors resigned. Mr. Wagenti serves full time as interim Chief Financial Officer, Secretary Treasurer and Director for American International Ventures, Inc. with no salary. Mr. Wagenti’s experience in developing and growing companies led to the conclusion he should serve as a director of the Company.
+ 
+Jose Granados Garcia. (64) Mr. Garcia has more than 12 years of mining experience with a background in consulting, identification of viable properties, production projections and advisor in operations. Mr. Garcia formerly served as the vice president of U.S. Precious Metals Inc. (USPR), a publicly traded mining company, and president of U.S. Precious Metals de Mexico. Mr. Garcia Is Chief Executive Officer of American International Ventures, Inc. and its subsidiary Mega Mines, Inc. 
+ 
+Kevin Gillen. (53)  Mr. Gillen is a construction superintendent with over 25 years’ experience in the commercial and residential building industry.  Mr. Gillen has been Superintendent with Anderson Interior, Florida, since 2013. Mr. Gillen was Superintendent with Interstate Drywall Corporation from 2009 until 2013; he was previously General Foreman with that company from 1996 until 2005. 
+ 
+Frederick R. Dunne, Jr. (72) is managing member of Dunne & Associates, LLC, a law firm in Kearny, New Jersey. Mr. Dunne received his BA from Niagara University 1966 and his JD from Seton Hall University 1970. Mr. Dunne was admitted as an Attorney at Law in the State of New Jersey on November 28, 1972; to the United States District Court for the District of New Jersey on November 28,1972; to the State of New York on May 15, 1984; to the United States District Court for the District of Colorado on May 19, 1997; to the United States Court of Appeals for the Third Circuit on October 28, 1998; to the United States District Court for the Eastern District of New York on March 14, 2000 and the United States District Court for the Southern District of New York on March14, 2000. Mr. Dunne has served many elected or appointed positions in Kearny, North Arlington, and Hudson County. Mr. Dunne was President West Hudson Bar Association, Chairman St. Benedict's Alumni Fund and St. Benedict's Prep Reunion Committee and Fund Raising. Mr. Dunne’s experience in corporate matters led to the conclusion he should serve as a director of the Company.
+ 
+ Jenevieve Gillen, (54) has over 30 years’ experience in real estate development and sales, business marketing, and business management for start-up corporations. Mrs. Gillen works as an independent realtor and property remodeler with EZ Choice Realty. She is also affiliated with Cutting-Edge Learning Academy where she is a director and the Business Manager for the Riverview, Florida private academy.
+ 
+Paul “Mike” Muncy (65) joins the AIVN board of directors. Mr. Muncy was also appointed Chief Technology Officer. Mr. Muncy brings over 35 years’ experience in mining and extraction. For the past 11 years, he also served as Chief Technology Officer for the GeoAsia Group, based in Singapore. Mr. Muncy responsibilities with GeoAsia was to provide due diligence and investigate new technologies that could enhance that company’s extensive mining operations and heavy industry holdings in Indonesia.
+50
+There are no written or oral agreements with any of the above-named management to receive compensation. 
+ 
+All executive officers are elected by the Board and hold office until the next Annual Meeting of stockholders and until their successors are elected and qualify. 
+ 
+ 
+ 
+ 
+ 
+Item 11.  Executive Compensation.
+The following table provides certain information for the fiscal periods ended May 31, 2017 and 2016 concerning compensation earned for services rendered in all capacities by our named executive officers.
+ 
+
+ 
+Employment Agreements
+ 
+None.
+ 
+ 
+Discussion of Director Compensation 
+ 
+Except for equity awards, the Company did not pay any director compensation during the fiscal periods ended May 31, 2017 and 2016. The Company may begin to compensate its directors at some time in the future.
+ 
+ 
+
+ 
+ 
+51
+Item 12. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters. 
+ 
+Security Ownership of Certain Beneficial Owners and Management 
+ 
+The following table sets forth, as of the date of August 7, 2018, the stock ownership of each person known by the Company to be the beneficial owner of five percent or more of the Company's Common Stock, each executive officer and director individually and all executive officers and directors of the Company as a group as of such date. No other class of voting securities is outstanding. Each person is believed to have sole voting and investment power over the shares except as noted. Unless otherwise indicated, the beneficial owner has sole voting and investment power. The following information is based upon 360,399,945 shares of common stock of the Company which are issued and outstanding as of May 31, 2016. Except as otherwise noted, the address for each party is 15105 Kestrelglen Way, Lithia, Florida 33547, the address of the Company. 
+ 
+
+ 
+ 
+(1) “Beneficial ownership" means having or sharing, directly or indirectly (i) voting power, which includes the power to vote or to direct the voting, or (ii) investment power, which includes the power to dispose or to direct the disposition, of shares of the common stock of an issuer. The definition of beneficial ownership includes shares underlying options or warrants to purchase common stock, or other securities convertible into common stock, that currently are exercisable or convertible or that will become exercisable or convertible within 60 days. Unless otherwise indicated, the beneficial owner has sole voting and investment power. 
+(2) Mr. Wagenti is Director, CFO and Secretary Treasurer of the Company. The amount includes 13,413,475 shares held by Mr. Wagenti’s spouse.
+(3) Mr. Garcia is President of American International Ventures, Inc. and Mega Mines, LLC. The parent Company’s subsidy. The amount includes 19,000,000 shares held by Mr. Garcia’s son’s.
+(4) Mr., Gillen is Chief Operating Officer. 
+(5) Mr. Dunne is a Director of the Company. 
+52
+(6) Mrs. Gillen is a Director of the Company. 
+(7) Mr. Polce and Mr. Muncy are Directors and Officers of Habsburg Capital LLC. The address for Habsburg Capital LLC is 3001 Cityview Drive, Morgantown, WV 26501. 
+ 
+Item 13. Certain Relationships and Related Party Transactions.
+ 
+On March 23, 2012, we closed on the Share Exchange Agreement with the shareholders of Placer Gold Prospecting, Inc. (PGPI) pursuant to which we acquired all of the issued and outstanding capital stock of PGPI. The transaction was treated as a reverse merger for accounting purposes. Jack Wagenti, our President, CEO and director executed the Exchange Agreement on our behalf. Mr. Wagenti was a founder, CEO and director of PGPI. At the time of closing, he owned 25 million shares of common stock of PGPI (approx. 16%) and in exchange he received 25 million shares of our common stock under the Exchange Agreement. Frederick Dunne, Jr., one of our directors, owned 1,000,000 shares of common stock of PGPI (less than 1%) at the time of closing, and in exchange he received 1,000,000 shares of our common stock under the Exchange Agreement 
+ 
+During the year ended May 31, 2018, the Company issued 60,000 shares of Company stock valued at $1,039,812.
+ 
+On February 2012, PGPI issued 100,000,000 shares were issued to Golds Gold Group, LLC making it the controlling shareholder of the Company. Consideration for the issuance of these shares was five separate mining claims. These claims were assigned no value on the books of the Company, which was the value on the books of the contributing company, as this transaction was between companies under common control. 
+Code of Ethics 
+ 
+The Company has adopted a code of ethics. The code of ethics is attached as Exhibit 14 to the Company’s Form 10-K for the period ended May 31, 2009. The Code applies to its principal executive officer, principal financial officer, principal accounting officer or controller, or persons performing similar functions.  
+Item 14.  Principal Accounting Fees and Services.
+ 
+The following table sets forth fees billed to us by the principal accountants to the Company for professional services rendered for the period ended May 31, 2016: 
+ 
+
+ 
+Audit Fees
+ 
+Audit fees consist of fees billed for professional services rendered for the audit of our financial statements and review of interim consolidated financial statements included in quarterly reports and services that are normally provided by the principal accountants in connection with statutory and regulatory filings or engagements.
+ 
+Audit Related Fees
+ 
+Audit related fees consist of fees billed for assurance and related services that are reasonably related to the performance of the audit or review of our consolidated financial statements and are not reported under “Audit Fees.”
+53
+Tax Fees
+ 
+Tax Fees consist of fees billed for professional services for tax compliance, tax advice and tax planning. These services include preparation of federal and state income tax returns.
+ 
+All Other Fees
+ 
+All other fees consist of fees for product and services other than the services reported above.
+ 
+Pre-Approval Policies and Procedures
+ 
+Prior to engaging its accountants to perform a particular service, the Company’s Board of Directors obtains an estimate for the service to be performed. All of the services described above were approved by the Board of Directors in accordance with its procedures.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SIGNATURES
+ 
+Pursuant to the requirements of the Securities Exchange Act of 1934, as amended, the Company has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized.
+ 
+
+ 
+Pursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the registrant and in the capacities and on the dates indicated.
+ 
+
+54
+
+
+
+
+
