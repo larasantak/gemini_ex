@@ -1,20 +1,24 @@
-Below is an English 10-K filing document. Your task is twofold:
+Below is an English 10-K filing document. Your task is threefold:
 
 1. Sentiment Classification:
-   - Analyze the entire document equally from an investor’s perspective.
-   - Decide whether, based solely on the provided text, an investor would likely increase their investment ("positive"), decrease their investment ("negative"), or maintain their current position ("neutral").
+   - Analyze the entire document from an investor's perspective.
+   - Based solely on the provided text, decide whether an investor would likely increase their investment ("positive"), decrease their investment ("negative"), or maintain their current position ("neutral").
 
 2. Summary Generation:
-   - Generate a concise summary that reflects the overall sentiment, emphasizing both positive and negative events relevant to an investment decision.
-   - Ensure the summary does not exceed 512 tokens.
-   - Note: The summary must be tokenized according to FinBERT's tokenizer, ensuring it does not exceed 512 tokens. If necessary, condense the content to fit within this limit.
+   - Generate a concise summary that provides the key factual details and information an investor needs to make an informed decision. The summary should reflect both positive and negative aspects without explicitly advising the investor.
+   - The summary should be as detailed as possible while not exceeding 512 tokens.
+   - Ensure that the summary is tokenized according to the standard BERT WordPiece tokenizer; condense the content if necessary to meet the 512-token limit.
+
+3. Sentiment Numerical Scoring:
+   - Provide a numerical sentiment score where 1 indicates a fully positive sentiment, 0 indicates a completely neutral sentiment, and -1 indicates a fully negative sentiment.
 
 Important: Rely solely on the text provided below and do not incorporate any external or background information.
 
-Output your result as a JSON object with exactly two keys:
+Output your result as a JSON object with exactly three keys:
 {
   "Sentiment": "<positive|negative|neutral>",
-  "Summary512": "<your summary here>"
+  "Summary512": "<your summary here>",
+  "SentimentNumerical": <numeric value between -1 and 1>
 }
 
 Do not include any additional explanations or text. The full 10-K document is appended below this prompt.
