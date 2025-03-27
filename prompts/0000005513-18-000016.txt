@@ -1,27 +1,46 @@
-Below is an English 10-K filing document. Your task is threefold:
+Below is a 10-K filing document. Your tasks are:
 
-1. Sentiment Classification:
-   - Analyze the entire document from an investor's perspective.
-   - Based solely on the provided text, decide whether an investor would likely increase their investment ("positive"), decrease their investment ("negative"), or maintain their current position ("neutral").
+    Sentiment Analysis:
 
-2. Summary Generation:
-   - Generate a concise summary that provides the key factual details and information an investor needs to make an informed decision. The summary should reflect both positive and negative aspects without explicitly advising the investor.
-   - The summary should be as detailed as possible while not exceeding 512 tokens.
-   - Ensure that the summary is tokenized according to the standard BERT WordPiece tokenizer; condense the content if necessary to meet the 512-token limit.
+        Evaluate the entire document from an investor’s perspective, relying solely on its content.
 
-3. Sentiment Numerical Scoring:
-   - Provide a numerical sentiment score where 1 indicates a fully positive sentiment, 0 indicates a completely neutral sentiment, and -1 indicates a fully negative sentiment.
+        Classify the overall sentiment as "positive", "negative", or "neutral".
 
-Important: Rely solely on the text provided below and do not incorporate any external or background information.
+        Assign a numeric sentiment value between -1.0 and +1.0 to reflect the degree of negativity or positivity:
 
-Output your result as a JSON object with exactly three keys:
-{
-  "Sentiment": "<positive|negative|neutral>",
-  "Summary512": "<your summary here>",
-  "SentimentNumerical": <numeric value between -1 and 1>
-}
+            -1.0 = extremely negative
 
-Do not include any additional explanations or text. The full 10-K document is appended below this prompt.
+            +1.0 = extremely positive
+
+            0.0 = perfectly neutral
+
+        Use decimal values between these extremes if appropriate.
+
+    Summary Generation (No Investment Recommendations):
+
+        Provide only factual summaries based on the 10-K document, without offering explicit investment advice or recommendations.
+
+        Generate four separate summaries, each capturing the document’s key positive and negative points relevant to an investment perspective:
+
+            One summary of exactly 400 words
+
+            One summary of exactly 450 words
+
+            One summary of exactly 500 words
+
+            One summary of exactly 512 words
+
+        Do not introduce any external data or references.
+
+    Output Format (Single JSON Object):
+
+        You must output exactly one JSON object (and nothing else) with the following structure: { "Sentiment": "<positive|negative|neutral>", "SentimentValue": <numeric value between -1.0 and 1.0>, "Summary400": "<400-word summary>", "Summary450": "<450-word summary>", "Summary500": "<500-word summary>", "Summary512": "<512-word summary>" }
+
+        The summaries must be strictly the stated word counts and must be based on the document alone.
+
+        Do not include any keys other than those specified, and do not add extra text or explanations outside the JSON.
+
+Important: Perform all your analysis based solely on the following 10-K document. No additional external information is allowed.
 
 
 10-K
