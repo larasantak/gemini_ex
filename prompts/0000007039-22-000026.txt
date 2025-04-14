@@ -22,13 +22,11 @@ Below is a 10-K filing document. Your tasks are as follows:
         b) One summary of exactly 450 words
         c) One summary of exactly 500 words
         d) One summary of exactly 512 words (measured strictly by whitespace-separated words)
-        e) One summary that, when tokenized using FinBERT’s tokenizer, consists of exactly 512 tokens
+      
 
         Precise Count Requirements:
 
             For all word-count summaries (400, 450, 500, and 512 words), use whitespace-separated words—not characters or general tokens—to determine length.
-
-            For the FinBERT token summary, ensure that the text yields exactly 512 tokens with FinBERT’s tokenizer.
 
             Implement an internal post-generation verification and adjustment process to trim or expand as needed until these exact targets are met.
 
@@ -36,7 +34,7 @@ Below is a 10-K filing document. Your tasks are as follows:
 
         Your final output must be a single, valid JSON object with exactly the following keys (and no additional keys or commentary):
 
-        { "Sentiment": "<positive|negative|neutral>", "SentimentValue": <numeric value between -1.0 and 1.0>, "Summary400": "<400-word summary>", "Summary450": "<450-word summary>", "Summary500": "<500-word summary>", "Summary512Word": "<512-word summary>", "Summary512FinBERT": "<summary that yields exactly 512 FinBERT tokens>" }
+        { "Sentiment": "<positive|negative|neutral>", "SentimentValue": <numeric value between -1.0 and 1.0>, "Summary400": "<400-word summary>", "Summary450": "<450-word summary>", "Summary500": "<500-word summary>", "Summary512Word": "<512-word summary>" }
 
         Ensure the JSON is well-formed and includes no extra keys or text.
 
